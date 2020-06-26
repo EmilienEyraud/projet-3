@@ -1,0 +1,9 @@
+.button
+{
+    width: 350px;
+    margin: auto;
+    border-radius: 25px;
+    color:$colour-secondary;
+    background-color: $colour-primary;
+    @include align-button;
+}

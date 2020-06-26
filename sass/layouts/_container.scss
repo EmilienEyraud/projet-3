@@ -1,0 +1,52 @@
+.container
+{
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+
+.menu1
+ {
+    @include align-menu ;
+    background-color: nth($background-menu, 1);
+    font-family: $font-family-menu1;
+        
+    
+ }
+
+ .menu2
+ {
+     @include align-menu;
+     background-color: nth($background-menu, 2);
+     font-family: $font-family-menu2;
+    
+ }
+
+ .menu3
+ {
+     @include align-menu;
+     background-color: nth($background-menu, 3);
+     font-family: $font-family-menu3;
+     
+ }
+
+ .menu4
+ {
+     @include align-menu;
+     background-color: nth($background-menu, 4);
+     font-family: $font-family-menu4;
+     
+ }
+ .bigmenu
+ {
+     @include main-text;
+     @include align-bigmenu;
+     &__content {
+         color: red;
+     }
+         
+ }

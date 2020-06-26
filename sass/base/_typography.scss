@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'ambleregular';
+    src: url('fonts/Amble-Regular-webfont.eot');
+    src: url('fonts/Amble-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Amble-Regular-webfont.woff2') format('woff2'),
+         url('fonts/Amble-Regular-webfont.woff') format('woff'),
+         url('fonts/Amble-Regular-webfont.ttf') format('truetype'),
+         url('fonts/Amble-Regular-webfont.svg#ambleregular') format('svg');
+    font-weight: normal;
+    font-style: normal;}
+
+@font-face {
+     font-family : 'allura';
+     src: url(../fonts/Allura-Regular.otf) format('opentype'),
+          url(../fonts/Allura-Regular-webfont.eot)format('embedded-opentype');
+     font-weight: normal;
+     font-style: normal;}
+
+@font-face {
+     font-family : 'sprat';
+     src: url(../fonts/Sprat-Regular.otf) format('opentype');
+     font-weight: normal;
+     font-style: normal;}
+
+
+@font-face {
+     font-family : 'alexbrush';
+     src: url(../fonts/AlexBrush-Regular.ttf) format('truetype');
+     font-weight: normal;
+     font-style: normal;}
+
+@font-face {
+     font-family : 'greatvibes';
+     src: url(../fonts/GreatVibes-Regular.otf) format('opentype');
+     font-weight: normal;
+     font-style: normal;} 
+     
+     
+    $font-family : "ambleregular, arial";
+    $font-family-menu1 : "allura";
+    $font-family-menu2 : "sprat";
+    $font-family-menu3 : "alexbrush";
+    $font-family-menu4 : "greatvibes";
+
+    h1 {
+         font-size: 50px;
+    }
