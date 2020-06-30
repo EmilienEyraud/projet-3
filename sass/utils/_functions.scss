@@ -1,1 +1,21 @@
-$background-menu : #eba360 #FFA5A5 #fcffcd  #e8ffff;
+@keyframes headshake {		
+    25% {		
+        // entièrement à droite		
+        transform: translateX($shake-intensity);		
+    }		
+    75% {		
+        // entièrement à gauche		
+        transform: translateX(-$shake-intensity);		
+    }		
+}		
+.mentionslegales{
+    animation: headshake 100ms cubic-bezier(.4,.1,.6,.9);
+    animation-iteration-count: 3;
+}
+.contacteznous{
+    animation: headshake 100ms cubic-bezier(.4,.1,.6,.9);
+    animation-iteration-count: 3;
+}
+
+
+

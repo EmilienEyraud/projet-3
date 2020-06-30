@@ -1,9 +1,47 @@
-.button
+.prochainement
 {
+    display: flex;
+    flex-direction: row;
     width: 350px;
     margin: auto;
     border-radius: 25px;
     color:$colour-secondary;
     background-color: $colour-primary;
     @include align-button;
+}
+
+.one {
+    opacity: 0;
+    -webkit-animation: clignotant 1.3s infinite;
+    -webkit-animation-delay: 0.0s;
+    animation: clignotant 1.3s infinite;
+    animation-delay: 0.0s;
+}
+
+.two {
+    opacity: 0;
+    -webkit-animation: clignotant 1.3s infinite;
+    -webkit-animation-delay: 0.2s;
+      animation: clignotant 1.3s infinite;
+      animation-delay: 0.2s;
+}
+
+.three {
+    opacity: 0;
+    -webkit-animation: clignotant 1.3s infinite;
+    -webkit-animation-delay: 0.3s;
+     animation: clignotant 1.3s infinite;
+     animation-delay: 0.3s;
+}
+
+@-webkit-keyframes clignotant {
+      0% { opacity: 0; }
+     50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes clignotant {
+      0% { opacity: 0; }
+     50% { opacity: 0; }
+    100% { opacity: 1; }
 }

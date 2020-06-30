@@ -1,5 +1,4 @@
-$colour-primary : #008000;
-$colour-secondary : #FFC720;
+
 
 .text1
 {
@@ -10,21 +9,29 @@ $colour-secondary : #FFC720;
 .text2
 {
     @include text-menu;
-    background-image: -webkit-linear-gradient(left, red, orange, yellow, green, blue, indigo, violet);
+    text-align: center;
+    background-image: -webkit-linear-gradient(left, blue, white, red);
 }
 .text3
 {
     @include text-menu;
     background-image: -webkit-linear-gradient(left, blue, blue);
+    
 }
 
-.text4
+.text4 
 {
     @include text-menu;
-    background-image: -webkit-linear-gradient(top, white, green);
+    background-image: -webkit-linear-gradient(bottom, white, green);
+    
 }
 a
 {
     color: $colour-secondary;
     text-decoration: none;
+}
+.music{
+    @include text-menu;
+    font-size: 100%;
+    background-image: -webkit-linear-gradient(right, yellow, orange);
 }
