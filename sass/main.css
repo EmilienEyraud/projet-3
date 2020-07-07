@@ -16,6 +16,19 @@
   animation-iteration-count: 3;
 }
 
+.menu {
+  -webkit-transform: rotate(0) scale(1);
+  transform: rotate(0) scale(1);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  opacity: 1;
+}
+.menu:hover {
+  -webkit-transform: rotate(360deg) scale(2);
+  transform: rotate(360deg) scale(2);
+  opacity: 0.5;
+}
+
 .text1 {
   font-size: 35px;
   -webkit-background-clip: text;
