@@ -1,66 +1,52 @@
+/* page accueil*/
+/*body*/
+/* main*/
+/* typographie */
+/* background */
+/* color text menu */
+/* animation footer*/
+/* page accueil*/
+/* footer*/
+/* animation des mentions legales et contactez-nous par effet wiggle*/
 @keyframes headshake {
   25% {
-    transform: translateX(10%);
+    transform: translateX(25%);
   }
   75% {
-    transform: translateX(-10%);
+    transform: translateX(-25%);
   }
 }
 .mentionslegales {
   animation: headshake 100ms cubic-bezier(0.4, 0.1, 0.6, 0.9);
-  animation-iteration-count: 3;
+  animation-iteration-count: 10;
 }
 
 .contacteznous {
   animation: headshake 100ms cubic-bezier(0.4, 0.1, 0.6, 0.9);
-  animation-iteration-count: 3;
+  animation-iteration-count: 10;
 }
 
-.menu {
-  -webkit-transform: rotate(0) scale(1);
-  transform: rotate(0) scale(1);
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  opacity: 1;
-}
-.menu:hover {
-  -webkit-transform: rotate(360deg) scale(2);
-  transform: rotate(360deg) scale(2);
-  opacity: 0.5;
-}
-
+/* page accueil*/
+/*header*/
+/* main*/
+/* bouton prochainement*/
+/*footer*/
+/*pages de menus*/
+/* page accueil*/
+/*body*/
+/* main*/
+/* typographie */
+/* background */
+/* color text menu */
+/* animation footer*/
+/* page accueil*/
+/* main*/
+/* restaurant 1*/
 .text1 {
   font-size: 35px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-image: -webkit-linear-gradient(left, #5a3000, #5a3000);
-}
-
-.text2 {
-  font-size: 35px;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-align: center;
-  background-image: -webkit-linear-gradient(left, blue, white, red);
-}
-
-.text3 {
-  font-size: 35px;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-image: -webkit-linear-gradient(left, blue, blue);
-}
-
-.text4 {
-  font-size: 35px;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-image: -webkit-linear-gradient(bottom, white, green);
-}
-
-a {
-  color: #FFC720;
-  text-decoration: none;
+  background-image: -webkit-linear-gradient(left, #251400, #251400);
 }
 
 .music {
@@ -68,7 +54,38 @@ a {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 100%;
-  background-image: -webkit-linear-gradient(right, yellow, orange);
+  background-image: -webkit-linear-gradient(left, red, orange);
+}
+
+/* restaurant 2*/
+.text2 {
+  font-size: 35px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  background-image: -webkit-linear-gradient(left, #e49709, purple, #0084ff);
+}
+
+/* restaurant 3*/
+.text3 {
+  font-size: 35px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: -webkit-linear-gradient(left, #0099ff, #02ffff);
+}
+
+/* restaurant 4*/
+.text4 {
+  font-size: 35px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: -webkit-linear-gradient(bottom, white, green);
+}
+
+/* footer*/
+a {
+  color: #FFC720;
+  text-decoration: none;
 }
 
 @font-face {
@@ -106,6 +123,7 @@ h1 {
   font-size: 50px;
 }
 
+/* animation du bouton prochainement*/
 .prochainement {
   display: flex;
   flex-direction: row;
@@ -177,6 +195,7 @@ header {
   height: auto;
 }
 
+/* page accueil*/
 .container {
   display: flex;
   flex-direction: row;
@@ -186,62 +205,135 @@ header {
   margin-left: 10%;
 }
 
-.menu1 {
+.bloc1 {
   width: 50%;
   min-height: 750px;
-  border: solid black 2px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-right: 5%;
   margin-left: 5%;
-  background-color: #eba360;
+  background-color: #f1bfdc;
   font-family: "allura";
 }
 
-.menu2 {
+.menu1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  opacity: 1;
+}
+.menu1:hover {
+  -webkit-transform: scale(2);
+  transform: scale(1.5);
+  opacity: 0.3;
+}
+.menu1__menu {
+  color: #251400;
+}
+
+.bloc2 {
   width: 50%;
   min-height: 750px;
-  border: solid black 2px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-right: 5%;
   margin-left: 5%;
-  background-color: #FFA5A5;
+  background-color: #f8f1f6;
   font-family: "sprat";
 }
 
-.menu3 {
+.menu2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  opacity: 1;
+}
+.menu2:hover {
+  -webkit-transform: scale(2);
+  transform: scale(1.5);
+  opacity: 0.3;
+}
+.menu2__menu {
+  color: #e49709;
+}
+
+.bloc3 {
   width: 50%;
   min-height: 750px;
-  border: solid black 2px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-right: 5%;
   margin-left: 5%;
-  background-color: #fcffcd;
+  background-color: #e2eff0;
   font-family: "alexbrush";
 }
 
-.menu4 {
+.menu3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  opacity: 1;
+}
+.menu3:hover {
+  -webkit-transform: scale(2);
+  transform: scale(1.5);
+  opacity: 0.3;
+}
+.menu3__menu {
+  color: aqua;
+}
+
+.bloc4 {
   width: 50%;
   min-height: 750px;
-  border: solid black 2px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-right: 5%;
   margin-left: 5%;
-  background-color: #e8ffff;
+  background-color: #edfced;
   font-family: "greatvibes";
 }
 
+.menu4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  opacity: 1;
+}
+.menu4:hover {
+  -webkit-transform: scale(2);
+  transform: scale(1.5);
+  opacity: 0.3;
+}
+.menu4__menu {
+  color: #64f15f;
+}
+
+/*pages menus*/
 .bigmenu {
   height: auto;
   width: 100%;

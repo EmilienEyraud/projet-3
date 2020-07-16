@@ -1,6 +1,25 @@
-$colour-primary : rgb(0, 128, 0);
-$colour-secondary : #FFC720;
-$background-menu : #eba360 #FFA5A5 #fcffcd  #e8ffff;
-$shake-intensity: 10%;	
-$cd-menu-start: rgba(1, 28, 55, 1);	
-$cd-menu-end:  rgba(1, 28, 55, 0);
+/* page accueil*/
+    /*body*/
+    $colour-primary : rgb(0, 128, 0);
+    $colour-secondary : #FFC720;
+    $font-family : "ambleregular, arial";
+
+    /* main*/
+    /* typographie */
+    $font-family-menu1 : "allura";
+    $font-family-menu2 : "sprat";
+    $font-family-menu3 : "alexbrush";
+    $font-family-menu4 : "greatvibes";
+
+    /* background */
+    $background-menu : rgb(241, 191, 220) rgb(248, 241, 246) rgb(226, 239, 240)  rgb(237, 252, 237);
+
+    /* color text menu */
+    $colortextmenu1 :rgb(37, 20, 0);
+    $colortextmenu2 : rgb(228, 151, 9);
+    $colortextmenu3 :rgb(0, 255, 255);
+    $colortextmenu4: rgb(100, 241, 95);
+   
+
+    /* animation footer*/
+    $shake-intensity: 25%;

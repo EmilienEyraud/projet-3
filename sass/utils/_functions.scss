@@ -1,33 +1,26 @@
-@keyframes headshake {		
-    25% {		
-        // entièrement à droite		
-        transform: translateX($shake-intensity);		
+/* page accueil*/
+    /* footer*/
+    /* animation des mentions legales et contactez-nous par effet wiggle*/
+    @keyframes headshake 
+    {		
+        25% {		
+            // entièrement à droite		
+            transform: translateX($shake-intensity);
+                    
+        }		
+        75% {		
+            // entièrement à gauche		
+            transform: translateX(-$shake-intensity);	
+            
+        }		
     }		
-    75% {		
-        // entièrement à gauche		
-        transform: translateX(-$shake-intensity);		
-    }		
-}		
-.mentionslegales{
-    animation: headshake 100ms cubic-bezier(.4,.1,.6,.9);
-    animation-iteration-count: 3;
-}
-.contacteznous{
-    animation: headshake 100ms cubic-bezier(.4,.1,.6,.9);
-    animation-iteration-count: 3;
-}
+    .mentionslegales{
+        animation: headshake 100ms cubic-bezier(.4,.1,.6,.9);
+        animation-iteration-count: 10;
+    }
+    .contacteznous{
+        animation: headshake 100ms cubic-bezier(.4,.1,.6,.9);
+        animation-iteration-count: 10;
+    }
 
-.menu {
-    -webkit-transform:rotate(0) scale(1);
-	transform:rotate(0) scale(1);
-	-webkit-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
-    opacity: 1;
-    
-&:hover {
-	-webkit-transform: rotate(360deg) scale(2);
-    transform:rotate(360deg) scale(2);
-    opacity: 0.5;
-    
-}
-}
+

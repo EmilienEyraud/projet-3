@@ -1,3 +1,5 @@
+/* page accueil*/
+
 .container
 {
     display: flex;
@@ -8,39 +10,72 @@
     margin-left: 10%;
 }
 
-
-.menu1
+.bloc1
  {
-    @include align-menu ;
+    @include align-bloc ;
     background-color: nth($background-menu, 1);
     font-family: $font-family-menu1;
-    
-    
  }
+.menu1
+{
+    @include align-menu;
+    @include anim-menu;
+    &__menu {
+        color: $colortextmenu1;
+            
+        }
+    }
 
+ 
+.bloc2
+{
+    @include align-bloc;
+    background-color: nth($background-menu, 2);
+    font-family: $font-family-menu2;
+}
  .menu2
  {
      @include align-menu;
-     background-color: nth($background-menu, 2);
-     font-family: $font-family-menu2;
-    
- }
+     @include anim-menu;
+     &__menu {
+         color: $colortextmenu2;
+     }
+  }
 
- .menu3
+.bloc3
+{
+    @include align-bloc;
+    background-color: nth($background-menu, 3);
+    font-family: $font-family-menu3;
+}  
+.menu3
  {
      @include align-menu;
-     background-color: nth($background-menu, 3);
-     font-family: $font-family-menu3;
-     
- }
+     @include anim-menu;
+     &__menu{
+         color:$colortextmenu3;
+     }
+}
 
+.bloc4
+{
+    @include align-bloc;
+    background-color: nth($background-menu, 4);
+    font-family: $font-family-menu4;
+
+}
  .menu4
  {
-     @include align-menu;
-     background-color: nth($background-menu, 4);
-     font-family: $font-family-menu4;
-     
- }
+    @include align-menu;
+    @include anim-menu;
+     &__menu{
+         color: $colortextmenu4;
+     }
+}
+
+/*pages menus*/
+
+
  .bigmenu
  {
      @include main-text;

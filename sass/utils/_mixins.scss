@@ -1,62 +1,86 @@
-@mixin align-header
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-}
-
-@mixin align-menu 
-{
-    width: 50%;
-    min-height: 750px;
-    border: solid black 2px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-right: 5%;
-    margin-left: 5%;
-}
-@mixin main-text
-{
-    height: auto;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   
-}
-@mixin text-menu 
-{
-    font-size:35px;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-@mixin align-footer 
-{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 10px;
-    padding-right: 10px;
-    height: auto; 
-    position: fixed;
-    right: 0px;
-    left: 0px;
-    bottom: 0px;
-}
-
-@mixin align-button 
+/* page accueil*/ 
+    /*header*/
+    @mixin align-header
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+    /* main*/
+    @mixin align-bloc /* alignement des blocs menus en page accueil*/
+    {
+        width: 50%;
+        min-height: 750px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+    @mixin align-menu /* alignement du teste dans le bloc*/
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    @mixin main-text /* propriétés d'alignement du nom de restaurant en page acceuil*/
+    {
+        height: auto;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    @mixin text-menu /* propriétés de couleurs des noms de restaurant en page acceuil*/
+    {
+        font-size:35px;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    @mixin anim-menu /* propriétés d'animation avec grossissement et effet de fondu de chaque bloc sur la page acceuil*/
+    {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
+        opacity: 1;
+        
+    &:hover {
+        -webkit-transform:  scale(2);
+        transform: scale(1.5);
+        opacity: 0.3;
+        
+    }
+    }
+    /* bouton prochainement*/
+    @mixin align-button 
 {
     margin-top: 20px;
     margin-bottom: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
+
+    /*footer*/
+    @mixin align-footer 
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 10px;
+        padding-right: 10px;
+        height: auto; 
+        position: fixed;
+        right: 0px;
+        left: 0px;
+        bottom: 0px;
+    }
+
+/*pages de menus*/
 @mixin align-bigmenu
  {
     display: flex;

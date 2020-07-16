@@ -1,37 +1,42 @@
+/* page accueil*/
 
-
-.text1
-{
-   @include text-menu;
-    background-image: -webkit-linear-gradient(left, rgb(90, 48, 0), rgb(90, 48, 0));
-}
-
-.text2
-{
+/* main*/
+    /* restaurant 1*/
+    .text1
+    {
     @include text-menu;
-    text-align: center;
-    background-image: -webkit-linear-gradient(left, blue, white, red);
-}
-.text3
-{
-    @include text-menu;
-    background-image: -webkit-linear-gradient(left, blue, blue);
-    
-}
+        background-image: -webkit-linear-gradient(left,$colortextmenu1, $colortextmenu1);
+    }
+    .music{
+        @include text-menu;
+        font-size: 100%;
+        background-image: -webkit-linear-gradient(left, red, orange);
+    }
+    /* restaurant 2*/
+    .text2
+    {
+        @include text-menu;
+        text-align: center;
+        background-image: -webkit-linear-gradient(left, rgb(228, 151, 9), purple, rgb(0, 132, 255));
+    }
+    /* restaurant 3*/
+    .text3
+    {
+        @include text-menu;
+        background-image: -webkit-linear-gradient(left, rgb(0, 153, 255), rgb(2, 255, 255));
+        
+    }
+    /* restaurant 4*/
+    .text4 
+    {
+        @include text-menu;
+        background-image: -webkit-linear-gradient(bottom, white, green);
+        
+    }
 
-.text4 
-{
-    @include text-menu;
-    background-image: -webkit-linear-gradient(bottom, white, green);
-    
-}
+/* footer*/
 a
 {
     color: $colour-secondary;
     text-decoration: none;
-}
-.music{
-    @include text-menu;
-    font-size: 100%;
-    background-image: -webkit-linear-gradient(right, yellow, orange);
 }
