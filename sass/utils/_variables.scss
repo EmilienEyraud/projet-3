@@ -6,13 +6,13 @@
 
     /* main*/
     /* typographie */
-    $font-family-menu1 : "allura";
-    $font-family-menu2 : "sprat";
-    $font-family-menu3 : "alexbrush";
-    $font-family-menu4 : "greatvibes";
+    $font-family-menu1 : "allura"; /*menu1=la note enchantee*/
+    $font-family-menu2 : "sprat";   /*menu2=le chic a la francaise*/
+    $font-family-menu3 : "alexbrush";/*menu3=le delice des papilles*/
+    $font-family-menu4 : "greatvibes"; /*menu4= la palette du gout*/
 
     /* background */
-    $background-menu : rgb(241, 191, 220) rgb(248, 241, 246) rgb(226, 239, 240)  rgb(237, 252, 237);
+    $background-menu : rgb(252,223,219) rgb(231, 227, 168) rgb(226, 239, 240)  rgb(253, 255, 253);
 
     /* color text menu */
     $colortextmenu1 :rgb(37, 20, 0);
@@ -23,3 +23,6 @@
 
     /* animation footer*/
     $shake-intensity: 25%;
+
+    /*responsivite*/
+    $breakpoints: (tablettes:1024px);

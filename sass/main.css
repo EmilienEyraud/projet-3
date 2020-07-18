@@ -2,9 +2,14 @@
 /*body*/
 /* main*/
 /* typographie */
+/*menu1=la note enchantee*/
+/*menu2=le chic a la francaise*/
+/*menu3=le delice des papilles*/
+/*menu4= la palette du gout*/
 /* background */
 /* color text menu */
 /* animation footer*/
+/*responsivite*/
 /* page accueil*/
 /* footer*/
 /* animation des mentions legales et contactez-nous par effet wiggle*/
@@ -31,14 +36,21 @@
 /* main*/
 /* bouton prochainement*/
 /*footer*/
+/*responsivite*/
 /*pages de menus*/
+/* alignements generiques*/
 /* page accueil*/
 /*body*/
 /* main*/
 /* typographie */
+/*menu1=la note enchantee*/
+/*menu2=le chic a la francaise*/
+/*menu3=le delice des papilles*/
+/*menu4= la palette du gout*/
 /* background */
 /* color text menu */
 /* animation footer*/
+/*responsivite*/
 /* page accueil*/
 /* main*/
 /* restaurant 1*/
@@ -214,7 +226,10 @@ header {
   align-items: center;
   margin-right: 5%;
   margin-left: 5%;
-  background-color: #f1bfdc;
+  box-shadow: 0px 0px 10px 4px rgba(0, 0, 255, 0.2);
+  -moz-box-shadow: 0px 0px 10px 4px rgba(0, 0, 255, 0.2);
+  -webkit-box-shadow: 0px 0px 10px 4px rgba(0, 0, 255, 0.2);
+  background-color: #fcdfdb;
   font-family: "allura";
 }
 
@@ -229,8 +244,8 @@ header {
   opacity: 1;
 }
 .menu1:hover {
-  -webkit-transform: scale(2);
-  transform: scale(1.5);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
   opacity: 0.3;
 }
 .menu1__menu {
@@ -246,7 +261,10 @@ header {
   align-items: center;
   margin-right: 5%;
   margin-left: 5%;
-  background-color: #f8f1f6;
+  box-shadow: 0px 0px 10px 4px rgba(0, 0, 255, 0.2);
+  -moz-box-shadow: 0px 0px 10px 4px rgba(0, 0, 255, 0.2);
+  -webkit-box-shadow: 0px 0px 10px 4px rgba(0, 0, 255, 0.2);
+  background-color: #e7e3a8;
   font-family: "sprat";
 }
 
@@ -261,8 +279,8 @@ header {
   opacity: 1;
 }
 .menu2:hover {
-  -webkit-transform: scale(2);
-  transform: scale(1.5);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
   opacity: 0.3;
 }
 .menu2__menu {
@@ -278,6 +296,9 @@ header {
   align-items: center;
   margin-right: 5%;
   margin-left: 5%;
+  box-shadow: 0px 0px 10px 4px rgba(0, 0, 255, 0.2);
+  -moz-box-shadow: 0px 0px 10px 4px rgba(0, 0, 255, 0.2);
+  -webkit-box-shadow: 0px 0px 10px 4px rgba(0, 0, 255, 0.2);
   background-color: #e2eff0;
   font-family: "alexbrush";
 }
@@ -293,8 +314,8 @@ header {
   opacity: 1;
 }
 .menu3:hover {
-  -webkit-transform: scale(2);
-  transform: scale(1.5);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
   opacity: 0.3;
 }
 .menu3__menu {
@@ -310,7 +331,10 @@ header {
   align-items: center;
   margin-right: 5%;
   margin-left: 5%;
-  background-color: #edfced;
+  box-shadow: 0px 0px 10px 4px rgba(0, 0, 255, 0.2);
+  -moz-box-shadow: 0px 0px 10px 4px rgba(0, 0, 255, 0.2);
+  -webkit-box-shadow: 0px 0px 10px 4px rgba(0, 0, 255, 0.2);
+  background-color: #fdfffd;
   font-family: "greatvibes";
 }
 
@@ -325,8 +349,8 @@ header {
   opacity: 1;
 }
 .menu4:hover {
-  -webkit-transform: scale(2);
-  transform: scale(1.5);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
   opacity: 0.3;
 }
 .menu4__menu {
@@ -334,7 +358,48 @@ header {
 }
 
 /*pages menus*/
-.bigmenu {
+.headermenu {
+  text-align: center;
+}
+
+.body {
+  align-items: center;
+  margin-left: 30%;
+  margin-right: 30%;
+  font-size: 110%;
+  padding-bottom: 25px;
+}
+.body__lanoteenchantee {
+  background-color: #fcdfdb;
+  font-family: "allura";
+  color: #251400;
+  padding: 35px;
+}
+.body__lechicalafrancaise {
+  background-color: #e7e3a8;
+  font-family: "sprat";
+  color: #e49709;
+  padding: 35px;
+}
+.body__ledelicedespapilles {
+  background-color: #e2eff0;
+  font-family: "alexbrush";
+  color: #251400;
+  padding: 35px;
+}
+.body__lapalettedugout {
+  background-color: #fdfffd;
+  font-family: "greatvibes";
+  padding: 35px;
+}
+@media screen and (max-width: 1024px) {
+  .body {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+.blocstartmenu {
   height: auto;
   width: 100%;
   display: flex;
@@ -343,8 +408,62 @@ header {
   display: flex;
   flex-direction: column;
 }
-.bigmenu__content {
-  color: red;
+.blocstartmenu__lanoteenchantee {
+  font-family: "allura";
+}
+.blocstartmenu__lechicalafrancaise {
+  font-family: "sprat";
+}
+.blocstartmenu__ledelicedespapilles {
+  font-family: "alexbrush";
+}
+.blocstartmenu__lapalettedugout {
+  font-family: "greatvibes";
+  font-size: 35px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: 400px;
+  text-align: center;
+  background-image: -webkit-linear-gradient(left, green, #64f15f);
+}
+
+.categories {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.categories__trait {
+  width: 30%;
+  overflow: hidden;
+}
+
+.detail {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.detail__lapalettedugoutgauche {
+  padding-left: 20px;
+}
+.detail__lapalettedugoutdroit {
+  padding-right: 20px;
+}
+.detail__ledelicedespapillesgauche {
+  padding-left: 20px;
+}
+.detail__ledelicedespapillesdroit {
+  padding-right: 20px;
+}
+
+.blocendmenu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.blocendmenu__tittle {
+  padding-left: 15px;
 }
 
 footer {

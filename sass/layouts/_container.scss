@@ -74,14 +74,105 @@
 }
 
 /*pages menus*/
+.headermenu 
+{
+   text-align: center;
+}
+.body
+{
+    @include align-body;
+        &__lanoteenchantee
+        {
+        background-color: nth($background-menu, 1);
+        font-family: $font-family-menu1;
+        color: $colortextmenu1;
+        padding: 35px;
+        }
+        &__lechicalafrancaise
+        {
+        background-color: nth($background-menu, 2);
+        font-family: $font-family-menu2;
+        color: $colortextmenu2;
+        padding: 35px;
+        }
+        &__ledelicedespapilles
+        {
+        background-color: nth($background-menu, 3);
+        font-family: $font-family-menu3;
+        color: $colortextmenu1;
+        padding: 35px;
+        }
+        &__lapalettedugout
+        {
+            background-color: nth($background-menu, 4);
+            font-family: $font-family-menu4;
+            padding: 35px;
+        }
+    @include tablettes-only;
+}
 
-
- .bigmenu
+ .blocstartmenu
  {
      @include main-text;
-     @include align-bigmenu;
-     &__content {
-         color: red;
+     @include align-blocmenu;
+     &__lanoteenchantee
+     {
+        font-family: $font-family-menu1;
      }
-         
+     &__lechicalafrancaise
+     {
+        font-family: $font-family-menu2;
+     }
+     &__ledelicedespapilles
+     {
+        font-family: $font-family-menu3;
+     }
+     &__lapalettedugout
+     {
+        font-family: $font-family-menu4;
+        @include text-menu;
+        width: 400px;
+        text-align: center;
+        background-image: -webkit-linear-gradient(left, green, $colortextmenu4);
+     }
  }
+ 
+ .categories
+ {
+    @include align-categories;
+   &__trait {
+       width: 30%;
+       overflow: hidden;
+   }
+ }
+ .detail
+ {
+     @include align-detail;
+     &__lapalettedugoutgauche 
+     {
+         padding-left: 20px;
+     }
+     &__lapalettedugoutdroit 
+     {
+         padding-right: 20px;
+     }
+     &__ledelicedespapillesgauche 
+     {
+         padding-left: 20px;
+     }
+     &__ledelicedespapillesdroit 
+     {
+         padding-right: 20px;
+     }
+     
+     
+}
+
+ .blocendmenu
+ {
+     @include align-blocendmenu;
+     &__tittle {
+         padding-left: 15px;
+     }
+ }
+ 
