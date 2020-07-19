@@ -74,10 +74,6 @@
 }
 
 /*pages menus*/
-.headermenu 
-{
-   text-align: center;
-}
 .body
 {
     @include align-body;
@@ -92,7 +88,7 @@
         {
         background-color: nth($background-menu, 2);
         font-family: $font-family-menu2;
-        color: $colortextmenu2;
+        color: $colortextmenu3;
         padding: 35px;
         }
         &__ledelicedespapilles
@@ -122,10 +118,16 @@
      &__lechicalafrancaise
      {
         font-family: $font-family-menu2;
+        @include text-menu;
+        font-size: 20px;
+        text-align: center;
+        background-image: -webkit-linear-gradient(left, $colortextrestaurant2start, $colortextrestaurant2middle, $colortextrestaurant2end);
      }
      &__ledelicedespapilles
      {
         font-family: $font-family-menu3;
+        color: $colortextrestaurant3start;
+        font-size: 25px;
      }
      &__lapalettedugout
      {
@@ -136,43 +138,105 @@
         background-image: -webkit-linear-gradient(left, green, $colortextmenu4);
      }
  }
- 
+ img
+ {
+    max-width: 100%;
+    max-height: 100%;
+ }
  .categories
  {
     @include align-categories;
-   &__trait {
-       width: 30%;
-       overflow: hidden;
-   }
+   &__trait 
+   {   
+       width: 25%;
+       overflow: hidden; 
+    }
+    &__name
+    {
+        text-align: center;
+        
+    }
+   
  }
  .detail
  {
      @include align-detail;
+     &__lanoteenchanteedroit
+     {
+         font-weight: bold;
+     }
      &__lapalettedugoutgauche 
      {
          padding-left: 20px;
+         
      }
-     &__lapalettedugoutdroit 
+     &__lapalettedugoutdroit
      {
          padding-right: 20px;
+         font-weight: bold;
+         
      }
      &__ledelicedespapillesgauche 
      {
          padding-left: 20px;
+         
      }
      &__ledelicedespapillesdroit 
      {
          padding-right: 20px;
+         font-weight: bold;
      }
-     
+     &__lechicalafrancaisegauche 
+     {
+         padding-left: 20px;
+         
+     }
+     &__lechicalafrancaisedroit 
+     {
+         padding-right: 20px;
+         font-weight: bold;
+     }
      
 }
 
  .blocendmenu
  {
      @include align-blocendmenu;
-     &__tittle {
+     &__tittle
+     {
          padding-left: 15px;
      }
+ }
+ 
+ /*specificites restaurant 2 le chic à la française*/ 
+ .starterlechicalafrancaise
+ {
+     color: $colortextrestaurant2start;
+     font-size: 12px;
+ }
+ .middlelechicalafrancaise
+ {
+     color: $colortextrestaurant2middle;
+     font-size: 12px;
+ }
+ .endlechicalafrancaise
+ {
+     color: $colortextrestaurant2end;
+     font-size: 12px;
+     margin-bottom: 75px;
+ }
+
+ /*specificites restaurant 3 le délice des papilles*/
+
+ .endledelicedespapilles
+ {
+    margin-bottom: 75px;
+ }
+
+ /*specificites restaurant 4 la palette du gout*/
+
+ .endlapalettedugout
+ {
+    margin-bottom: 75px;
  }
  

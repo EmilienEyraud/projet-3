@@ -1,7 +1,7 @@
 /* page accueil*/
     /*body*/
-    $colour-primary : rgb(0, 128, 0);
-    $colour-secondary : #FFC720;
+    $colour-primary : rgb(72, 140, 116);
+    $colour-secondary : rgb(224, 185, 64);
     $font-family : "ambleregular, arial";
 
     /* main*/
@@ -12,12 +12,27 @@
     $font-family-menu4 : "greatvibes"; /*menu4= la palette du gout*/
 
     /* background */
-    $background-menu : rgb(252,223,219) rgb(231, 227, 168) rgb(226, 239, 240)  rgb(253, 255, 253);
+    $background-menu: rgb(252,223,219) rgb(255, 245, 254) rgb(226, 239, 240)  rgb(253, 255, 253);
+
+    /*music*/
+    
+    $colormusicstart:rgb(238, 50, 85);
+    $colormusicend:rgb(246, 144, 104);
+
+    /*color text restaurants*/
+    $colortextrestaurant1 :rgb(61, 19, 24);
+    $colortextrestaurant2start:rgb(198, 116, 19);
+    $colortextrestaurant2middle:rgb(165, 103, 153);
+    $colortextrestaurant2end:rgb(110, 76, 204);
+    $colortextrestaurant3start:rgb(3, 42, 221);
+    $colortextrestaurant3end:rgb(2, 255, 255);
+    $colortextrestaurant4start:rgb(67,151, 61);
+    $colortextrestaurant4end:rgb(187,248, 132);
 
     /* color text menu */
-    $colortextmenu1 :rgb(37, 20, 0);
-    $colortextmenu2 : rgb(228, 151, 9);
-    $colortextmenu3 :rgb(0, 255, 255);
+    $colortextmenu1 :$colortextrestaurant1;
+    $colortextmenu2 : $colortextrestaurant2start;
+    $colortextmenu3 :$colortextrestaurant3end;
     $colortextmenu4: rgb(100, 241, 95);
    
 

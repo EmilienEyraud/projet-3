@@ -5,32 +5,32 @@
     .text1
     {
     @include text-menu;
-        background-image: -webkit-linear-gradient(left,$colortextmenu1, $colortextmenu1);
+        background-image: -webkit-linear-gradient(left,$colortextrestaurant1, $colortextrestaurant1);
     }
     .music{
         @include text-menu;
         font-size: 100%;
-        background-image: -webkit-linear-gradient(left, red, orange);
+        background-image: -webkit-linear-gradient(left, $colormusicstart, $colormusicend);
     }
     /* restaurant 2*/
     .text2
     {
         @include text-menu;
         text-align: center;
-        background-image: -webkit-linear-gradient(left, rgb(228, 151, 9), purple, rgb(0, 132, 255));
+        background-image: -webkit-linear-gradient(left, $colortextrestaurant2start, $colortextrestaurant2middle, $colortextrestaurant2end);
     }
     /* restaurant 3*/
     .text3
     {
         @include text-menu;
-        background-image: -webkit-linear-gradient(left, rgb(0, 153, 255), rgb(2, 255, 255));
+        background-image: -webkit-linear-gradient(left, $colortextrestaurant3start, $colortextrestaurant3end);
         
     }
     /* restaurant 4*/
     .text4 
     {
         @include text-menu;
-        background-image: -webkit-linear-gradient(bottom, white, green);
+        background-image: -webkit-linear-gradient(left, $colortextrestaurant4start, $colortextrestaurant4end);
         
     }
 

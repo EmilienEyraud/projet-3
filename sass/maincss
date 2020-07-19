@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* page accueil*/
 /*body*/
 /* main*/
@@ -63,7 +62,7 @@
   font-size: 35px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-image: -webkit-linear-gradient(left, #3d1318, #3d1318);
+  background-image: -webkit-linear-gradient(left, #251400, #251400);
 }
 
 .music {
@@ -71,7 +70,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 100%;
-  background-image: -webkit-linear-gradient(left, #ee3255, #f69068);
+  background-image: -webkit-linear-gradient(left, red, orange);
 }
 
 /* restaurant 2*/
@@ -80,7 +79,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
-  background-image: -webkit-linear-gradient(left, #c67413, #a56799, #6e4ccc);
+  background-image: -webkit-linear-gradient(left, #e49709, purple, #0084ff);
 }
 
 /* restaurant 3*/
@@ -88,7 +87,7 @@
   font-size: 35px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-image: -webkit-linear-gradient(left, #032add, #02ffff);
+  background-image: -webkit-linear-gradient(left, #0099ff, #02ffff);
 }
 
 /* restaurant 4*/
@@ -96,12 +95,12 @@
   font-size: 35px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-image: -webkit-linear-gradient(left, #43973d, #bbf884);
+  background-image: -webkit-linear-gradient(bottom, white, green);
 }
 
 /* footer*/
 a {
-  color: #e0b940;
+  color: #FFC720;
   text-decoration: none;
 }
 
@@ -147,8 +146,8 @@ h1 {
   width: 350px;
   margin: auto;
   border-radius: 25px;
-  color: #e0b940;
-  background-color: #488c74;
+  color: #FFC720;
+  background-color: green;
   margin-top: 20px;
   margin-bottom: 100px;
   display: flex;
@@ -203,8 +202,8 @@ h1 {
   }
 }
 header {
-  background-color: #488c74;
-  color: #e0b940;
+  background-color: green;
+  color: #FFC720;
   height: 100px;
   display: flex;
   justify-content: center;
@@ -254,7 +253,7 @@ header {
   opacity: 0.3;
 }
 .menu1__menu {
-  color: #3d1318;
+  color: #251400;
 }
 
 .bloc2 {
@@ -289,7 +288,7 @@ header {
   opacity: 0.3;
 }
 .menu2__menu {
-  color: #c67413;
+  color: #e49709;
 }
 
 .bloc3 {
@@ -324,7 +323,7 @@ header {
   opacity: 0.3;
 }
 .menu3__menu {
-  color: #02ffff;
+  color: #0099ff;
 }
 
 .bloc4 {
@@ -363,6 +362,10 @@ header {
 }
 
 /*pages menus*/
+.headermenu {
+  text-align: center;
+}
+
 .body {
   align-items: center;
   margin-left: 30%;
@@ -373,19 +376,19 @@ header {
 .body__lanoteenchantee {
   background-color: #fcdfdb;
   font-family: "allura";
-  color: #3d1318;
+  color: #251400;
   padding: 35px;
 }
 .body__lechicalafrancaise {
   background-color: #fff5fe;
   font-family: "sprat";
-  color: #02ffff;
+  color: #0099ff;
   padding: 35px;
 }
 .body__ledelicedespapilles {
   background-color: #e2eff0;
   font-family: "alexbrush";
-  color: #3d1318;
+  color: #251400;
   padding: 35px;
 }
 .body__lapalettedugout {
@@ -417,14 +420,12 @@ header {
   font-size: 35px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 20px;
+  width: 200px;
   text-align: center;
-  background-image: -webkit-linear-gradient(left, #c67413, #a56799, #6e4ccc);
+  background-image: -webkit-linear-gradient(left, #e49709, purple, #0084ff);
 }
 .blocstartmenu__ledelicedespapilles {
   font-family: "alexbrush";
-  color: #032add;
-  font-size: 25px;
 }
 .blocstartmenu__lapalettedugout {
   font-family: "greatvibes";
@@ -436,11 +437,6 @@ header {
   background-image: -webkit-linear-gradient(left, green, #64f15f);
 }
 
-img {
-  max-width: 100%;
-  max-height: 100%;
-}
-
 .categories {
   display: flex;
   flex-direction: row;
@@ -448,11 +444,8 @@ img {
   align-items: center;
 }
 .categories__trait {
-  width: 25%;
+  width: 30%;
   overflow: hidden;
-}
-.categories__name {
-  text-align: center;
 }
 
 .detail {
@@ -460,29 +453,23 @@ img {
   flex-direction: row;
   justify-content: space-between;
 }
-.detail__lanoteenchanteedroit {
-  font-weight: bold;
-}
 .detail__lapalettedugoutgauche {
   padding-left: 20px;
 }
 .detail__lapalettedugoutdroit {
   padding-right: 20px;
-  font-weight: bold;
 }
 .detail__ledelicedespapillesgauche {
   padding-left: 20px;
 }
 .detail__ledelicedespapillesdroit {
   padding-right: 20px;
-  font-weight: bold;
 }
 .detail__lechicalafrancaisegauche {
   padding-left: 20px;
 }
 .detail__lechicalafrancaisedroit {
   padding-right: 20px;
-  font-weight: bold;
 }
 
 .blocendmenu {
@@ -495,36 +482,9 @@ img {
   padding-left: 15px;
 }
 
-/*specificites restaurant 2 le chic à la française*/
-.starterlechicalafrancaise {
-  color: #c67413;
-  font-size: 12px;
-}
-
-.middlelechicalafrancaise {
-  color: #a56799;
-  font-size: 12px;
-}
-
-.endlechicalafrancaise {
-  color: #6e4ccc;
-  font-size: 12px;
-  margin-bottom: 75px;
-}
-
-/*specificites restaurant 3 le délice des papilles*/
-.endledelicedespapilles {
-  margin-bottom: 75px;
-}
-
-/*specificites restaurant 4 la palette du gout*/
-.endlapalettedugout {
-  margin-bottom: 75px;
-}
-
 footer {
-  color: #e0b940;
-  background-color: #488c74;
+  color: #FFC720;
+  background-color: green;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -542,4 +502,4 @@ footer {
   text-align: right;
 }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=maincss.map */
