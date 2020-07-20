@@ -131,12 +131,6 @@ a {
   font-style: normal;
 }
 @font-face {
-  font-family: "greatvibes";
-  src: url(../fonts/GreatVibes-Regular.otf) format("opentype");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
   font-family: "roboto";
   src: url(../fonts/Roboto-Light.ttf) format("truetype");
   font-weight: normal;
