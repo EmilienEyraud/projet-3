@@ -135,6 +135,7 @@
         @include text-menu;
         width: 400px;
         text-align: center;
+        font-size: 25px;
         background-image: -webkit-linear-gradient(left, green, $colortextmenu4);
      }
  }
@@ -174,6 +175,7 @@
      {
          padding-right: 20px;
          font-weight: bold;
+         text-align: right;
          
      }
      &__ledelicedespapillesgauche 
@@ -234,9 +236,17 @@
  }
 
  /*specificites restaurant 4 la palette du gout*/
-
+ .starterlapalettedugout
+ {
+     font-size: 12px;
+ }
+.middlelapalettedugout
+{
+    font-size: 12px;
+}
  .endlapalettedugout
  {
     margin-bottom: 75px;
+    font-size: 12px;
  }
  
