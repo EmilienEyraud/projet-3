@@ -116,7 +116,9 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        text-align: center;
     }
+
     @mixin align-detail
     {
         display: flex;
@@ -130,3 +132,10 @@
         align-items: center;
         justify-content: center;
     }
+    @mixin underline 
+    {
+    text-decoration: none;
+    display: inline;
+    padding-bottom: 10px;
+    }
+    

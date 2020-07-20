@@ -447,15 +447,118 @@ img {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  text-align: center;
 }
 .categories__trait {
   width: 25%;
   overflow: hidden;
 }
-.categories__name {
-  text-align: center;
+
+/* souligfnement*/
+/*restaurant 1 */
+a.underlinelechicalafrancaisestart {
+  color: #c67413;
+  text-decoration: none;
+  display: inline;
+  padding-bottom: 10px;
+  transition: all 0.35s linear;
+  background: linear-gradient(to bottom, #c67413 0%, #c67413 98%);
+  background-size: 0px 2px;
+  background-repeat: no-repeat;
+  background-position: left 100%;
 }
 
+a.underlinelechicalafrancaisestart:hover {
+  background-size: 100% 2px;
+}
+
+/* restuarant 2*/
+/*categories 1*/
+a.underlinelechicalafrancaisestart {
+  color: #c67413;
+  text-decoration: none;
+  display: inline;
+  padding-bottom: 10px;
+  transition: all 0.35s linear;
+  background: linear-gradient(to bottom, #c67413 0%, #c67413 98%);
+  background-size: 0px 2px;
+  background-repeat: no-repeat;
+  background-position: left 100%;
+}
+
+a.underlinelechicalafrancaisestart:hover {
+  background-size: 100% 2px;
+}
+
+/* categories 2*/
+a.underlinelechicalafrancaisemiddle {
+  color: #a56799;
+  text-decoration: none;
+  display: inline;
+  padding-bottom: 10px;
+  transition: all 0.35s linear;
+  background: linear-gradient(to bottom, #a56799 0%, #a56799 98%);
+  background-size: 0px 2px;
+  background-repeat: no-repeat;
+  background-position: left 100%;
+}
+
+a.underlinelechicalafrancaisemiddle:hover {
+  background-size: 100% 2px;
+}
+
+/* categories 3*/
+a.underlinelechicalafrancaiseend {
+  color: #6e4ccc;
+  text-decoration: none;
+  display: inline;
+  padding-bottom: 10px;
+  transition: all 0.35s linear;
+  background: linear-gradient(to bottom, #6e4ccc 0%, #6e4ccc 98%);
+  background-size: 0px 2px;
+  background-repeat: no-repeat;
+  background-position: left 100%;
+}
+
+a.underlinelechicalafrancaiseend:hover {
+  background-size: 100% 2px;
+}
+
+/*restaurant 3*/
+a.underlineledelicedespapilles {
+  color: black;
+  text-decoration: none;
+  display: inline;
+  padding-bottom: 10px;
+  transition: all 0.35s linear;
+  background: linear-gradient(to bottom, #032add 0%, #032add 98%);
+  background-size: 0px 2px;
+  background-repeat: no-repeat;
+  background-position: left 100%;
+}
+
+a.underlineledelicedespapilles:hover {
+  background-size: 100% 2px;
+}
+
+/*restaurant 4*/
+a.underlinelapalettedugout {
+  color: black;
+  text-decoration: none;
+  display: inline;
+  padding-bottom: 10px;
+  transition: all 0.35s linear;
+  background: linear-gradient(to bottom, #43973d 0%, #43973d 98%);
+  background-size: 0px 2px;
+  background-repeat: no-repeat;
+  background-position: left 100%;
+}
+
+a.underlinelapalettedugout:hover {
+  background-size: 100% 2px;
+}
+
+/* fin soulignement*/
 .detail {
   display: flex;
   flex-direction: row;
@@ -463,6 +566,7 @@ img {
 }
 .detail__lanoteenchanteedroit {
   font-weight: bold;
+  text-align: right;
 }
 .detail__lapalettedugoutgauche {
   padding-left: 20px;
@@ -478,6 +582,7 @@ img {
 .detail__ledelicedespapillesdroit {
   padding-right: 20px;
   font-weight: bold;
+  text-align: right;
 }
 .detail__lechicalafrancaisegauche {
   padding-left: 20px;
@@ -485,6 +590,7 @@ img {
 .detail__lechicalafrancaisedroit {
   padding-right: 20px;
   font-weight: bold;
+  text-align: right;
 }
 
 .blocendmenu {
