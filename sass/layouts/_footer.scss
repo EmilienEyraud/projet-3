@@ -1,15 +1,19 @@
 footer
 {
-    
     color: $colour-secondary;
     background-color: $colour-primary;
     @include align-footer;
     text-decoration: none;
 }
 
-.footer.contacteznous
-{
-    text-align: right;
+a{
+    color: $colour-secondary;
+    text-decoration: none;
 }
+.footer-bloc
+{
+    @include make-a-freeze;
+}
+
 
 

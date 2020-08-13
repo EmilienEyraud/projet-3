@@ -36,8 +36,6 @@
     $colortextmenu4: rgb(100, 241, 95);
    
 
-    /* animation footer*/
-    $shake-intensity: 25%;
-
+    
     /*responsivite*/
-    $breakpoints: (tablettes:1024px);
+    $breakpoints: (tablettes:1024px, mobile:600px);

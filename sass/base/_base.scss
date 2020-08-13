@@ -1,43 +1,4 @@
-/* page accueil*/
 
-/* main*/
-    /* restaurant 1*/
-    .text1
-    {
-    @include text-menu;
-        background-image: -webkit-linear-gradient(left,$colortextrestaurant1, $colortextrestaurant1);
-    }
-    .music{
-        @include text-menu;
-        font-size: 100%;
-        background-image: -webkit-linear-gradient(left, $colormusicstart, $colormusicend);
-    }
-    /* restaurant 2*/
-    .text2
-    {
-        @include text-menu;
-        text-align: center;
-        background-image: -webkit-linear-gradient(left, $colortextrestaurant2start, $colortextrestaurant2middle, $colortextrestaurant2end);
-    }
-    /* restaurant 3*/
-    .text3
-    {
-        @include text-menu;
-        background-image: -webkit-linear-gradient(left, $colortextrestaurant3start, $colortextrestaurant3end);
-        
-    }
-    /* restaurant 4*/
-    .text4 
-    {
-        @include text-menu;
-        background-image: -webkit-linear-gradient(left, $colortextrestaurant4start, $colortextrestaurant4end);
-        
-        
-    }
 
-/* footer*/
-a
-{
-    color: $colour-secondary;
-    text-decoration: none;
-}
+
+

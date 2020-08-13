@@ -1,0 +1,90 @@
+/*page*/
+.body
+{
+    @include align-body;
+        &__lechicalafrancaise
+        {
+        background-color: nth($background-menu, 2);
+        font-family: $font-family-menu2;
+        color: $colortextmenu3;
+        padding: 35px;
+        }
+
+}
+/* en-tête nom du restaurant*/
+ .blocstartmenu
+{
+     @include main-text;
+     @include align-blocmenu;
+     &__lechicalafrancaise
+     {
+        font-family: $font-family-menu2;
+        @include text-menu;
+        font-size: 20px;
+        text-align: center;
+        background-image: -webkit-linear-gradient(left, $colortextrestaurant2start, $colortextrestaurant2middle, $colortextrestaurant2end);
+     }
+}
+/* catégories*/     
+ .categories
+{
+    @include align-categories;
+    &__trait 
+   {   
+       width: 25%;
+       overflow: hidden; 
+    }
+}
+/* soulignement*/
+      /*categories 1*/
+      a.underlinelechicalafrancaisestart
+        {
+          color:$colortextrestaurant2start;
+          @include underline ($colortextrestaurant2start);
+        }
+      /* categories 2*/
+      a.underlinelechicalafrancaisemiddle
+        {
+          color:$colortextrestaurant2middle;
+          @include underline ($colortextrestaurant2middle);
+        }
+        /* categories 3*/
+        a.underlinelechicalafrancaiseend
+        {
+            color: $colortextrestaurant2end;
+            @include underline ($colortextrestaurant2end);
+        }     
+/*detail menu*/
+ .detail
+{
+     @include align-detail;
+     &__lechicalafrancaisegauche 
+     {
+         padding-left: 20px;
+     }
+     &__lechicalafrancaisedroit 
+     {
+         padding-right: 20px;
+         font-weight: bold;
+         text-align: right;
+     }
+}
+ /*specificites restaurant 2 le chic à la française*/ 
+ .starterlechicalafrancaise
+ {
+     color: $colortextrestaurant2start;
+     font-size: 12px;
+ }
+ .middlelechicalafrancaise
+ {
+     color: $colortextrestaurant2middle;
+     font-size: 12px;
+ }
+ .endlechicalafrancaise
+ {
+     color: $colortextrestaurant2end;
+     font-size: 12px;
+     margin-bottom: 75px;
+ }
+
+ 

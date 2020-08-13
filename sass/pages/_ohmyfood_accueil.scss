@@ -1,0 +1,49 @@
+.site-content
+{
+    @include align-bloc;
+}
+
+.box-menu-container
+ {  overflow: hidden;
+    @include shadow-bloc;
+    
+ }
+
+.box-menu-content
+{
+    @include make-a-zoom;
+    width: 100%;
+    margin-bottom: -5%;
+}
+/* Responsivité*/  
+@media screen and (max-width: 1024px)
+{
+    body
+    {
+        width: 100%;
+        margin: 0px;
+        
+    }
+    
+    .site-content{
+        margin-top: 5px;
+        margin-bottom: 0px;
+        margin-right: 0px;
+        margin-left: 0px;
+        height: auto;
+        
+        
+    }
+    .box-menu-container{
+        margin-top: 5%;
+        margin-bottom: 5%;
+        margin-right: 0px;
+        margin-left: 0px;
+        height: 50%;
+    }
+    .box-menu-content
+    {
+       height: 100%;
+    }
+}
+

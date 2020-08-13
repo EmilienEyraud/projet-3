@@ -1,0 +1,75 @@
+/* page*/
+.body
+{
+    @include align-body;
+        &__lapalettedugout
+        {
+            background-color: nth($background-menu, 4);
+            font-family: $font-family-menu4;
+            padding: 35px;
+        }
+   
+}
+/* en-tête nom du restaurant*/
+ .blocstartmenu
+ {
+     @include main-text;
+     @include align-blocmenu;
+     &__lapalettedugout
+     {
+        font-family: $font-family-menu4;
+        @include text-menu;
+        width: 400px;
+        text-align: center;
+        font-size: 25px;
+        background-image: -webkit-linear-gradient(left, green, $colortextmenu4);
+     }
+ }
+ /*traits categories*/
+ .categories
+ {
+    @include align-categories;
+        
+   &__trait 
+   {   
+       width: 25%;
+       overflow: hidden; 
+    }
+    
+}
+/* soulignement*/
+a.underlinelapalettedugout
+{
+    color: black;
+    @include underline ($colortextrestaurant4start);
+}    
+/* détail menu*/ 
+ .detail
+ {
+     @include align-detail;
+     &__lapalettedugoutgauche 
+     {
+         padding-left: 20px;
+     }
+     &__lapalettedugoutdroit
+     {
+         padding-right: 20px;
+         font-weight: bold;
+         text-align: right;
+     }
+} 
+ /*specificites restaurant 4 la palette du gout*/
+ .starterlapalettedugout
+ {
+     font-size: 12px;
+ }
+.middlelapalettedugout
+{
+    font-size: 12px;
+}
+ .endlapalettedugout
+ {
+    margin-bottom: 75px;
+    font-size: 12px;
+ }
+ 

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* page accueil*/
 /*body*/
 /* main*/
@@ -62,7 +63,8 @@
   font-size: 35px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-image: -webkit-linear-gradient(left, #251400, #251400);
+  background-image: -webkit-linear-gradient(left, #3d1318, #3d1318);
+  border: solid black 2px;
 }
 
 .music {
@@ -70,7 +72,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 100%;
-  background-image: -webkit-linear-gradient(left, red, orange);
+  background-image: -webkit-linear-gradient(left, #ee3255, #f69068);
 }
 
 /* restaurant 2*/
@@ -79,7 +81,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
-  background-image: -webkit-linear-gradient(left, #e49709, purple, #0084ff);
+  background-image: -webkit-linear-gradient(left, #c67413, #a56799, #6e4ccc);
 }
 
 /* restaurant 3*/
@@ -87,7 +89,7 @@
   font-size: 35px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-image: -webkit-linear-gradient(left, #0099ff, #02ffff);
+  background-image: -webkit-linear-gradient(left, #032add, #02ffff);
 }
 
 /* restaurant 4*/
@@ -95,12 +97,12 @@
   font-size: 35px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-image: -webkit-linear-gradient(bottom, white, green);
+  background-image: -webkit-linear-gradient(left, #43973d, #bbf884);
 }
 
 /* footer*/
 a {
-  color: #FFC720;
+  color: #e0b940;
   text-decoration: none;
 }
 
@@ -130,8 +132,8 @@ a {
   font-style: normal;
 }
 @font-face {
-  font-family: "greatvibes";
-  src: url(../fonts/GreatVibes-Regular.otf) format("opentype");
+  font-family: "roboto";
+  src: url(../fonts/Roboto-Light.ttf) format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -146,8 +148,8 @@ h1 {
   width: 350px;
   margin: auto;
   border-radius: 25px;
-  color: #FFC720;
-  background-color: green;
+  color: #e0b940;
+  background-color: #488c74;
   margin-top: 20px;
   margin-bottom: 100px;
   display: flex;
@@ -202,8 +204,8 @@ h1 {
   }
 }
 header {
-  background-color: green;
-  color: #FFC720;
+  background-color: #488c74;
+  color: #e0b940;
   height: 100px;
   display: flex;
   justify-content: center;
@@ -222,6 +224,11 @@ header {
 }
 
 .bloc1 {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  opacity: 1;
   width: 50%;
   min-height: 750px;
   display: flex;
@@ -236,24 +243,19 @@ header {
   background-color: #fcdfdb;
   font-family: "allura";
 }
+.bloc1:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  opacity: 0.3;
+}
 
 .menu1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  -webkit-transform: scale(1);
-  transform: scale(1);
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  opacity: 1;
-}
-.menu1:hover {
-  -webkit-transform: scale(1.2);
-  transform: scale(1.2);
-  opacity: 0.3;
 }
 .menu1__menu {
-  color: #251400;
+  color: #3d1318;
 }
 
 .bloc2 {
@@ -288,7 +290,7 @@ header {
   opacity: 0.3;
 }
 .menu2__menu {
-  color: #e49709;
+  color: #c67413;
 }
 
 .bloc3 {
@@ -323,7 +325,7 @@ header {
   opacity: 0.3;
 }
 .menu3__menu {
-  color: #0099ff;
+  color: #02ffff;
 }
 
 .bloc4 {
@@ -339,7 +341,7 @@ header {
   -moz-box-shadow: 0px 0px 10px 4px rgba(0, 0, 255, 0.2);
   -webkit-box-shadow: 0px 0px 10px 4px rgba(0, 0, 255, 0.2);
   background-color: #fdfffd;
-  font-family: "greatvibes";
+  font-family: "roboto";
 }
 
 .menu4 {
@@ -362,10 +364,6 @@ header {
 }
 
 /*pages menus*/
-.headermenu {
-  text-align: center;
-}
-
 .body {
   align-items: center;
   margin-left: 30%;
@@ -376,24 +374,24 @@ header {
 .body__lanoteenchantee {
   background-color: #fcdfdb;
   font-family: "allura";
-  color: #251400;
+  color: #3d1318;
   padding: 35px;
 }
 .body__lechicalafrancaise {
   background-color: #fff5fe;
   font-family: "sprat";
-  color: #0099ff;
+  color: #02ffff;
   padding: 35px;
 }
 .body__ledelicedespapilles {
   background-color: #e2eff0;
   font-family: "alexbrush";
-  color: #251400;
+  color: #3d1318;
   padding: 35px;
 }
 .body__lapalettedugout {
   background-color: #fdfffd;
-  font-family: "greatvibes";
+  font-family: "roboto";
   padding: 35px;
 }
 @media screen and (max-width: 1024px) {
@@ -420,21 +418,29 @@ header {
   font-size: 35px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  width: 200px;
+  font-size: 20px;
   text-align: center;
-  background-image: -webkit-linear-gradient(left, #e49709, purple, #0084ff);
+  background-image: -webkit-linear-gradient(left, #c67413, #a56799, #6e4ccc);
 }
 .blocstartmenu__ledelicedespapilles {
   font-family: "alexbrush";
+  color: #032add;
+  font-size: 25px;
 }
 .blocstartmenu__lapalettedugout {
-  font-family: "greatvibes";
+  font-family: "roboto";
   font-size: 35px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   width: 400px;
   text-align: center;
+  font-size: 25px;
   background-image: -webkit-linear-gradient(left, green, #64f15f);
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .categories {
@@ -442,34 +448,150 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  text-align: center;
 }
 .categories__trait {
-  width: 30%;
+  width: 25%;
   overflow: hidden;
 }
 
+/* souligfnement*/
+/*restaurant 1 */
+a.underlinelechicalafrancaisestart {
+  color: #c67413;
+  text-decoration: none;
+  display: inline;
+  padding-bottom: 10px;
+  transition: all 0.35s linear;
+  background: linear-gradient(to bottom, #c67413 0%, #c67413 98%);
+  background-size: 0px 2px;
+  background-repeat: no-repeat;
+  background-position: left 100%;
+}
+
+a.underlinelechicalafrancaisestart:hover {
+  background-size: 100% 2px;
+}
+
+/* restuarant 2*/
+/*categories 1*/
+a.underlinelechicalafrancaisestart {
+  color: #c67413;
+  text-decoration: none;
+  display: inline;
+  padding-bottom: 10px;
+  transition: all 0.35s linear;
+  background: linear-gradient(to bottom, #c67413 0%, #c67413 98%);
+  background-size: 0px 2px;
+  background-repeat: no-repeat;
+  background-position: left 100%;
+}
+
+a.underlinelechicalafrancaisestart:hover {
+  background-size: 100% 2px;
+}
+
+/* categories 2*/
+a.underlinelechicalafrancaisemiddle {
+  color: #a56799;
+  text-decoration: none;
+  display: inline;
+  padding-bottom: 10px;
+  transition: all 0.35s linear;
+  background: linear-gradient(to bottom, #a56799 0%, #a56799 98%);
+  background-size: 0px 2px;
+  background-repeat: no-repeat;
+  background-position: left 100%;
+}
+
+a.underlinelechicalafrancaisemiddle:hover {
+  background-size: 100% 2px;
+}
+
+/* categories 3*/
+a.underlinelechicalafrancaiseend {
+  color: #6e4ccc;
+  text-decoration: none;
+  display: inline;
+  padding-bottom: 10px;
+  transition: all 0.35s linear;
+  background: linear-gradient(to bottom, #6e4ccc 0%, #6e4ccc 98%);
+  background-size: 0px 2px;
+  background-repeat: no-repeat;
+  background-position: left 100%;
+}
+
+a.underlinelechicalafrancaiseend:hover {
+  background-size: 100% 2px;
+}
+
+/*restaurant 3*/
+a.underlineledelicedespapilles {
+  color: black;
+  text-decoration: none;
+  display: inline;
+  padding-bottom: 10px;
+  transition: all 0.35s linear;
+  background: linear-gradient(to bottom, #032add 0%, #032add 98%);
+  background-size: 0px 2px;
+  background-repeat: no-repeat;
+  background-position: left 100%;
+}
+
+a.underlineledelicedespapilles:hover {
+  background-size: 100% 2px;
+}
+
+/*restaurant 4*/
+a.underlinelapalettedugout {
+  color: black;
+  text-decoration: none;
+  display: inline;
+  padding-bottom: 10px;
+  transition: all 0.35s linear;
+  background: linear-gradient(to bottom, #43973d 0%, #43973d 98%);
+  background-size: 0px 2px;
+  background-repeat: no-repeat;
+  background-position: left 100%;
+}
+
+a.underlinelapalettedugout:hover {
+  background-size: 100% 2px;
+}
+
+/* fin soulignement*/
 .detail {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+.detail__lanoteenchanteedroit {
+  font-weight: bold;
+  text-align: right;
 }
 .detail__lapalettedugoutgauche {
   padding-left: 20px;
 }
 .detail__lapalettedugoutdroit {
   padding-right: 20px;
+  font-weight: bold;
+  text-align: right;
 }
 .detail__ledelicedespapillesgauche {
   padding-left: 20px;
 }
 .detail__ledelicedespapillesdroit {
   padding-right: 20px;
+  font-weight: bold;
+  text-align: right;
 }
 .detail__lechicalafrancaisegauche {
   padding-left: 20px;
 }
 .detail__lechicalafrancaisedroit {
   padding-right: 20px;
+  font-weight: bold;
+  text-align: right;
 }
 
 .blocendmenu {
@@ -482,9 +604,45 @@ header {
   padding-left: 15px;
 }
 
+/*specificites restaurant 2 le chic à la française*/
+.starterlechicalafrancaise {
+  color: #c67413;
+  font-size: 12px;
+}
+
+.middlelechicalafrancaise {
+  color: #a56799;
+  font-size: 12px;
+}
+
+.endlechicalafrancaise {
+  color: #6e4ccc;
+  font-size: 12px;
+  margin-bottom: 75px;
+}
+
+/*specificites restaurant 3 le délice des papilles*/
+.endledelicedespapilles {
+  margin-bottom: 75px;
+}
+
+/*specificites restaurant 4 la palette du gout*/
+.starterlapalettedugout {
+  font-size: 12px;
+}
+
+.middlelapalettedugout {
+  font-size: 12px;
+}
+
+.endlapalettedugout {
+  margin-bottom: 75px;
+  font-size: 12px;
+}
+
 footer {
-  color: #FFC720;
-  background-color: green;
+  color: #e0b940;
+  background-color: #488c74;
   display: flex;
   justify-content: space-between;
   align-items: center;

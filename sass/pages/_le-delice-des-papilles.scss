@@ -1,0 +1,66 @@
+/*page*/
+.body
+{
+    @include align-body;
+        &__ledelicedespapilles
+        {
+        background-color: nth($background-menu, 3);
+        font-family: $font-family-menu3;
+        color: $colortextmenu1;
+        padding: 35px;
+        }
+}
+/*en-tête nom restaurant*/
+ .blocstartmenu
+ {
+     @include main-text;
+     @include align-blocmenu;
+     &__ledelicedespapilles
+     {
+        font-family: $font-family-menu3;
+        color: $colortextrestaurant3start;
+        font-size: 25px;
+     }
+}
+/*categories*/ 
+ .categories
+ {
+    @include align-categories;
+        
+   &__trait 
+   {   
+       width: 25%;
+       overflow: hidden; 
+    }
+    
+}
+/* soulignement*/
+
+          a.underlineledelicedespapilles
+             {
+              color: black;
+              @include underline ($colortextrestaurant3start);
+             }
+/* detail*/
+ .detail
+ {
+     @include align-detail;
+    &__ledelicedespapillesgauche 
+     {
+         padding-left: 20px;
+         
+     }
+     &__ledelicedespapillesdroit 
+     {
+         padding-right: 20px;
+         font-weight: bold;
+         text-align: right;
+     }
+}     
+ /*specificites restaurant 3 le délice des papilles*/
+ .endledelicedespapilles
+ {
+    margin-bottom: 75px;
+ }
+
+ 

@@ -1,0 +1,60 @@
+/*page*/
+.body
+{
+    @include align-body;
+        &__lanoteenchantee
+        {
+        background-color: nth($background-menu, 1);
+        font-family: $font-family-menu1;
+        color: $colortextmenu1;
+        padding: 35px;
+        }
+   
+}
+/* en-tête nom du restaurant*/
+ .blocstartmenu
+ {
+     @include main-text;
+     @include align-blocmenu;
+     &__lanoteenchantee
+     {
+        font-family: $font-family-menu1;
+     }
+ }
+ /* catégories*/
+ .categories
+ {
+    @include align-categories;
+        
+   &__trait 
+   {   
+       width: 25%;
+       overflow: hidden; 
+    }
+ }
+/* soulignement*/
+a.underlinelanoteenchantee
+    {
+        color: $colortextrestaurant1;
+        @include underline ($colortextrestaurant1);
+    } 
+/*detail menu*/
+    .detail
+ {
+     @include align-detail;
+     &__lanoteenchanteedroit
+     {
+         font-weight: bold;
+         text-align: right;
+     }
+}
+/* spécificité restaurant 1 la note enchantée*/
+ .blocendmenu
+ {
+     @include align-blocendmenu;
+     &__tittle
+     {
+         padding-left: 15px;
+     }
+ }
+ 
