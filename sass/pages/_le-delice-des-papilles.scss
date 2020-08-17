@@ -9,13 +9,12 @@
         color: $colortextmenu1;
         padding: 35px;
         @media screen and (max-width: 1024px)
-         
-        {
-                 
-            padding: 0px;
             
-        }
-        }
+            {
+                padding: 0px;
+                
+            }
+        }     
 }
 /*en-tête nom restaurant*/
  .blocstartmenu
@@ -29,18 +28,7 @@
         font-size: 25px;
      }
 }
-/*categories*/ 
- .categories
- {
-    @include align-categories;
-        
-   &__trait 
-   {   
-      width: 25%;
-       overflow: hidden; 
-    }
-    
-}
+
 /* soulignement*/
 
           a.underlineledelicedespapilles
@@ -73,6 +61,7 @@
         {
                  
             margin-bottom: 0px;
+            padding-bottom: 15px;
             
         }
  }

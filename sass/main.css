@@ -164,6 +164,20 @@ header {
   height: auto;
 }
 
+/* pages menus*/
+/* catégories*/
+.categories {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.categories__trait {
+  width: 25%;
+  overflow: hidden;
+}
+
 footer {
   color: #e0b940;
   background-color: #488c74;
@@ -188,6 +202,13 @@ a {
 .footer-bloc:hover {
   animation: headshake 100ms;
   animation-iteration-count: infinite;
+}
+@media screen and (max-width: 1024px) {
+  .footer-bloc {
+    width: 50%;
+    font-size: 12px;
+    text-align: center;
+  }
 }
 
 .site-content {
@@ -223,7 +244,7 @@ a {
 /* Responsivité*/
 @media screen and (max-width: 1024px) {
   body {
-    width: 100%;
+    width: 125%;
     margin: 0px;
   }
 
@@ -261,6 +282,11 @@ img {
   font-size: 110%;
   padding-bottom: 25px;
 }
+@media screen and (max-width: 1024px) {
+  .body {
+    margin: 0px;
+  }
+}
 .body__lechicalafrancaise {
   background-color: #fff5fe;
   font-family: "sprat";
@@ -291,19 +317,6 @@ img {
   font-size: 20px;
   text-align: center;
   background-image: -webkit-linear-gradient(left, #c67413, #a56799, #6e4ccc);
-}
-
-/* catégories*/
-.categories {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
-}
-.categories__trait {
-  width: 25%;
-  overflow: hidden;
 }
 
 /* soulignement*/
@@ -400,22 +413,19 @@ a.underlinelechicalafrancaiseend:hover {
   font-size: 110%;
   padding-bottom: 25px;
 }
+@media screen and (max-width: 1024px) {
+  .body {
+    margin: 0px;
+  }
+}
 .body__lapalettedugout {
   background-color: #fdfffd;
   font-family: "roboto";
   padding: 35px;
 }
-@media screen and (max-width: 1024px) {
-  .body {
-    width: 100%;
-    margin-bottom: 25px;
-    margin-left: 0px;
-  }
-}
 
 @media screen and (max-width: 1024px) {
   .body__lapalettedugout {
-    width: 100%;
     padding-top: 0px;
     padding-left: 0px;
     padding-right: 0px;
@@ -441,19 +451,6 @@ a.underlinelechicalafrancaiseend:hover {
   text-align: center;
   font-size: 25px;
   background-image: -webkit-linear-gradient(left, green, #64f15f);
-}
-
-/*traits categories*/
-.categories {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
-}
-.categories__trait {
-  width: 25%;
-  overflow: hidden;
 }
 
 /* soulignement*/
@@ -514,6 +511,11 @@ a.underlinelapalettedugout:hover {
   font-size: 110%;
   padding-bottom: 25px;
 }
+@media screen and (max-width: 1024px) {
+  .body {
+    margin: 0px;
+  }
+}
 .body__ledelicedespapilles {
   background-color: #e2eff0;
   font-family: "alexbrush";
@@ -540,19 +542,6 @@ a.underlinelapalettedugout:hover {
   font-family: "alexbrush";
   color: #032add;
   font-size: 25px;
-}
-
-/*categories*/
-.categories {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
-}
-.categories__trait {
-  width: 25%;
-  overflow: hidden;
 }
 
 /* soulignement*/
@@ -593,6 +582,7 @@ a.underlineledelicedespapilles:hover {
 @media screen and (max-width: 1024px) {
   .endledelicedespapilles {
     margin-bottom: 0px;
+    padding-bottom: 15px;
   }
 }
 
@@ -604,18 +594,16 @@ a.underlineledelicedespapilles:hover {
   font-size: 110%;
   padding-bottom: 25px;
 }
+@media screen and (max-width: 1024px) {
+  .body {
+    margin: 0px;
+  }
+}
 .body__lanoteenchantee {
   background-color: #fcdfdb;
   font-family: "allura";
   color: #3d1318;
   padding: 35px;
-}
-@media screen and (max-width: 1024px) {
-  .body {
-    width: 100%;
-    margin-bottom: 25px;
-    margin-left: 0px;
-  }
 }
 
 /* en-tête nom du restaurant*/
@@ -630,19 +618,6 @@ a.underlineledelicedespapilles:hover {
 }
 .blocstartmenu__lanoteenchantee {
   font-family: "allura";
-}
-
-/* catégories*/
-.categories {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
-}
-.categories__trait {
-  width: 25%;
-  overflow: hidden;
 }
 
 /* soulignement*/
@@ -681,13 +656,6 @@ a.underlinelanoteenchantee:hover {
 }
 .blocendmenu__tittle {
   padding-left: 15px;
-}
-
-@media screen and (max-width: 1024px) {
-  .footer-bloc {
-    width: 50%;
-    font-size: 12px;
-  }
 }
 
 /*# sourceMappingURL=main.css.map */

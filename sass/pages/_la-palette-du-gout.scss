@@ -7,23 +7,16 @@
             background-color: nth($background-menu, 4);
             font-family: $font-family-menu4;
             padding: 35px;
-        }
-        @media screen and (max-width: 1024px)
-         
-        {
-            width: 100%;
-            margin-bottom: 25px;
-            margin-left: 0px;
-           
             
         }
+     
 }
 .body__lapalettedugout
 {
     @media screen and (max-width: 1024px)
          
     {
-        width: 100%;
+        
         padding-top: 0px;
         padding-left: 0px;
         padding-right: 0px;
@@ -45,18 +38,7 @@
         background-image: -webkit-linear-gradient(left, green, $colortextmenu4);
      }
  }
- /*traits categories*/
- .categories
- {
-    @include align-categories;
-        
-   &__trait 
-   {   
-       width: 25%;
-       overflow: hidden; 
-    }
-    
-}
+ 
 /* soulignement*/
 a.underlinelapalettedugout
 {

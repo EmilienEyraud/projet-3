@@ -1,1 +1,12 @@
-
+/* pages menus*/
+/* catégories*/
+.categories
+{
+   @include align-categories;
+       
+  &__trait 
+  {   
+      width: 25%;
+      overflow: hidden; 
+   }
+}

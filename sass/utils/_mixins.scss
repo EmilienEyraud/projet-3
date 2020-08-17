@@ -7,7 +7,9 @@
         justify-content: center;
         align-items: center;
         height: auto;
-    }
+     
+ }   
+    
 
 /* main*/
     @mixin align-bloc/* alignement des blocs menus en page accueil*/
@@ -82,7 +84,13 @@
         margin-right: 30%;
         font-size: 110%;
         padding-bottom: 25px;
+        @media screen and (max-width: 1024px)
+            {
+                margin: 0px;    
+                                
+            }     
     }
+    
     @mixin align-blocmenu /*alignement du menu*/
     {
         display: flex;

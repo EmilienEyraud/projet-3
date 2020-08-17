@@ -15,12 +15,11 @@ img
         color: $colortextmenu3;
         padding: 35px;
         @media screen and (max-width: 1024px)
-         
-        {
-                 
-            padding: 0px;
             
-        }
+            {
+                 
+               padding: 0px; 
+            }
         }
 }
 /* en-tête nom du restaurant*/
@@ -37,16 +36,7 @@ img
         background-image: -webkit-linear-gradient(left, $colortextrestaurant2start, $colortextrestaurant2middle, $colortextrestaurant2end);
      }
 }
-/* catégories*/     
- .categories
-{
-    @include align-categories;
-    &__trait 
-   {   
-       width: 25%;
-       overflow: hidden; 
-    }
-}
+
 /* soulignement*/
       /*categories 1*/
       a.underlinelechicalafrancaisestart

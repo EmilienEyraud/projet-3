@@ -8,17 +8,11 @@
         font-family: $font-family-menu1;
         color: $colortextmenu1;
         padding: 35px;
+            
         }
-    @media screen and (max-width: 1024px)
-         
-            {
-                width: 100%;
-                margin-bottom: 25px;
-                margin-left: 0px;
-                
-            }
-        
 }
+           
+
 /* en-tête nom du restaurant*/
  .blocstartmenu
  {
@@ -29,17 +23,7 @@
         font-family: $font-family-menu1;
      }
  }
- /* catégories*/
- .categories
- {
-    @include align-categories;
-        
-   &__trait 
-   {   
-       width: 25%;
-       overflow: hidden; 
-    }
- }
+ 
 /* soulignement*/
 a.underlinelanoteenchantee
     {
@@ -66,11 +50,4 @@ a.underlinelanoteenchantee
      }
      
  }
- .footer-bloc {
-    @media screen and (max-width: 1024px)
-         
-    {
-        width: 50%;
-        font-size:12px;
-    }
- }
+ 
