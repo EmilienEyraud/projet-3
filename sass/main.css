@@ -93,7 +93,6 @@ h1 {
 }
 
 /* animation du bouton prochainement*/
-/* animation du bouton prochainement*/
 .prochainement {
   display: flex;
   flex-direction: row;
@@ -249,6 +248,12 @@ a {
   }
 }
 /*page*/
+img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+}
+
 .body {
   align-items: center;
   margin-left: 30%;
@@ -261,6 +266,11 @@ a {
   font-family: "sprat";
   color: #02ffff;
   padding: 35px;
+}
+@media screen and (max-width: 1024px) {
+  .body__lechicalafrancaise {
+    padding: 0px;
+  }
 }
 
 /* en-tête nom du restaurant*/
@@ -376,6 +386,11 @@ a.underlinelechicalafrancaiseend:hover {
   font-size: 12px;
   margin-bottom: 75px;
 }
+@media screen and (max-width: 1024px) {
+  .endlechicalafrancaise {
+    margin-bottom: 0px;
+  }
+}
 
 /* page*/
 .body {
@@ -389,6 +404,22 @@ a.underlinelechicalafrancaiseend:hover {
   background-color: #fdfffd;
   font-family: "roboto";
   padding: 35px;
+}
+@media screen and (max-width: 1024px) {
+  .body {
+    width: 100%;
+    margin-bottom: 25px;
+    margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .body__lapalettedugout {
+    width: 100%;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
 
 /* en-tête nom du restaurant*/
@@ -469,6 +500,11 @@ a.underlinelapalettedugout:hover {
   margin-bottom: 75px;
   font-size: 12px;
 }
+@media screen and (max-width: 1024px) {
+  .endlapalettedugout {
+    margin-bottom: 0px;
+  }
+}
 
 /*page*/
 .body {
@@ -483,6 +519,11 @@ a.underlinelapalettedugout:hover {
   font-family: "alexbrush";
   color: #3d1318;
   padding: 35px;
+}
+@media screen and (max-width: 1024px) {
+  .body__ledelicedespapilles {
+    padding: 0px;
+  }
 }
 
 /*en-tête nom restaurant*/
@@ -549,6 +590,11 @@ a.underlineledelicedespapilles:hover {
 .endledelicedespapilles {
   margin-bottom: 75px;
 }
+@media screen and (max-width: 1024px) {
+  .endledelicedespapilles {
+    margin-bottom: 0px;
+  }
+}
 
 /*page*/
 .body {
@@ -563,6 +609,13 @@ a.underlineledelicedespapilles:hover {
   font-family: "allura";
   color: #3d1318;
   padding: 35px;
+}
+@media screen and (max-width: 1024px) {
+  .body {
+    width: 100%;
+    margin-bottom: 25px;
+    margin-left: 0px;
+  }
 }
 
 /* en-tête nom du restaurant*/
@@ -628,6 +681,13 @@ a.underlinelanoteenchantee:hover {
 }
 .blocendmenu__tittle {
   padding-left: 15px;
+}
+
+@media screen and (max-width: 1024px) {
+  .footer-bloc {
+    width: 50%;
+    font-size: 12px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

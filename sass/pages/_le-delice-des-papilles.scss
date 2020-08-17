@@ -8,6 +8,13 @@
         font-family: $font-family-menu3;
         color: $colortextmenu1;
         padding: 35px;
+        @media screen and (max-width: 1024px)
+         
+        {
+                 
+            padding: 0px;
+            
+        }
         }
 }
 /*en-tête nom restaurant*/
@@ -29,7 +36,7 @@
         
    &__trait 
    {   
-       width: 25%;
+      width: 25%;
        overflow: hidden; 
     }
     
@@ -61,6 +68,13 @@
  .endledelicedespapilles
  {
     margin-bottom: 75px;
+    @media screen and (max-width: 1024px)
+         
+        {
+                 
+            margin-bottom: 0px;
+            
+        }
  }
 
  
