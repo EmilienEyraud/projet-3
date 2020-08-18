@@ -2,7 +2,7 @@ header
 {
     background-color: $colour-primary;
     color: $colour-secondary;
-    height: 100px;
+   
     @include align-header;
 }
 	

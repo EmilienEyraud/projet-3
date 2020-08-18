@@ -7,6 +7,7 @@
         justify-content: center;
         align-items: center;
         height: auto;
+       
      
  }   
     
@@ -21,8 +22,12 @@
         margin-bottom: 25px;
         margin-right: 10%;
         margin-left: 10%;
-        
+        @media screen and (max-width: 1024px)
+            {
+                flex-direction: column;
+            }
     }
+
     @mixin shadow-bloc /* alignement et ombre sur les blocs en page accueil*/
     {
         margin-left: 5%;
@@ -58,8 +63,6 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-left: 10px;
-        padding-right: 10px;
         height: auto; 
         position: fixed;
         right: 0px;

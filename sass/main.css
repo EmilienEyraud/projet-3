@@ -157,7 +157,6 @@ h1 {
 header {
   background-color: #488c74;
   color: #e0b940;
-  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -165,6 +164,10 @@ header {
 }
 
 /* pages menus*/
+body {
+  margin: 0px;
+}
+
 /* catégories*/
 .categories {
   display: flex;
@@ -184,8 +187,6 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 10px;
-  padding-right: 10px;
   height: auto;
   position: fixed;
   right: 0px;
@@ -199,6 +200,10 @@ a {
   text-decoration: none;
 }
 
+.footer-bloc {
+  padding-right: 10px;
+  padding-left: 10px;
+}
 .footer-bloc:hover {
   animation: headshake 100ms;
   animation-iteration-count: infinite;
@@ -219,6 +224,11 @@ a {
   margin-bottom: 25px;
   margin-right: 10%;
   margin-left: 10%;
+}
+@media screen and (max-width: 1024px) {
+  .site-content {
+    flex-direction: column;
+  }
 }
 
 .box-menu-container {
@@ -656,6 +666,16 @@ a.underlinelanoteenchantee:hover {
 }
 .blocendmenu__tittle {
   padding-left: 15px;
+}
+
+.legal-notice {
+  margin-bottom: 100px;
+  padding: 10px;
+  text-align: justify;
+}
+
+.legal-notice-title {
+  text-align: center;
 }
 
 /*# sourceMappingURL=main.css.map */
