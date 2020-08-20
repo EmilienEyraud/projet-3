@@ -6,8 +6,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        height: auto;
-       
+        height: auto;      
      
  }   
     
@@ -17,7 +16,7 @@
     {
         display: flex;
         flex-direction: row;
-        height: 500px;
+        justify-content: center;
         margin-top: 25px;
         margin-bottom: 25px;
         margin-right: 10%;
@@ -26,6 +25,18 @@
             {
                 flex-direction: column;
             }
+    }
+
+    @mixin size-bloc /* taille des blocs en page accueil*/
+    {
+        width: 300px;
+        height: 400px;
+        text-align: center;
+        @media screen and (max-width: 1024px)
+            {
+                width: 100%;
+            } 
+               
     }
 
     @mixin shadow-bloc /* alignement et ombre sur les blocs en page accueil*/
@@ -37,15 +48,16 @@
         -webkit-box-shadow: 0px 0px 10px 4px rgba(0, 0, 255, .2);
     }
     
-    @mixin make-a-zoom /* propriété de grossissement et opacité sur l'image*/
+
+    @mixin zoom /* ghossisement et opacité des menus*/
     {
-        transition-duration: 1s;
-        &:hover {
-            background: no-repeat 0 -50%;
-            transform: scale(1.2);
+        overflow: hidden;
+        transition: transform 0.4s ease-in-out 0s;
+        &:hover{
+            transform: scale(1.1); 
             opacity: 0.5;
-        }
-    }  
+   }
+    }
 
 /*prochainement*/
     @mixin align-button

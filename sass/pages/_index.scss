@@ -1,20 +1,106 @@
-.site-content
+.box-menu-container
 {
     @include align-bloc;
-}
-
-.box-menu-container
- {  overflow: hidden;
-    @include shadow-bloc;
     
- }
-
-.box-menu-content
-{
-    @include make-a-zoom;
-    width: 100%;
-    margin-bottom: -5%;
+    
+    &__lanoteenchantee
+    {  
+        
+        @include size-bloc;
+        @include shadow-bloc;
+        background-color: nth($background-menu, 1);
+        font-family: $font-family-menu1;
+        color: $colortextmenu1;
+        .fa-music
+        {
+        @include text-menu;
+        background-image: -webkit-linear-gradient(left, $colormusicstart, $colormusicend);
+        font-size :50px;
+        padding-top: 125px;
+        }
+        .titre-lanote
+        {
+        color:$colortextrestaurant1; 
+        font-size:25px; 
+        
+        }
+        .menu-lanote
+        {
+        color:$colortextrestaurant1;
+        font-size: 25px;
+        
+        }
+    }
+    &__lechicalafrancaise
+    {  
+        @include size-bloc;
+        @include shadow-bloc;
+        background-color: nth($background-menu, 2);
+        font-family: $font-family-menu2;
+        color: $colortextmenu3;
+        .titre-lechic
+        {
+        padding-top: 100px;
+        font-size:50px;
+        @include text-menu;
+        background-image: -webkit-linear-gradient(left, $colortextrestaurant2start, $colortextrestaurant2middle, $colortextrestaurant2end);
+        }
+        .menu-lechic
+        {
+            color:$colortextrestaurant2start;
+            font-size:30px;
+        }
+    }
+    &__ledelicedespapilles
+    {  
+        @include size-bloc;
+        @include shadow-bloc;
+        background-color: nth($background-menu, 3);
+        font-family: $font-family-menu3;
+        .titre-ledelice
+        {
+        padding-top: 75px;
+        @include text-menu;
+        background-image: -webkit-linear-gradient(left,$colortextrestaurant3start, $colortextrestaurant3end);
+        }
+        .menu-ledelice
+        {
+        color:$colortextrestaurant3start;  
+        font-size:30px;
+        }
+    }
+    &__lapalettedugout
+    {  
+        @include size-bloc;
+        @include shadow-bloc;
+        background-color: nth($background-menu, 4);
+        font-family: $font-family-menu4;
+        .titre-lapalette
+        {
+        padding-top:75px;
+        @include text-menu;
+        background-image: -webkit-linear-gradient(left,$colortextrestaurant4start, $colortextrestaurant4end);
+        }
+        .menu-lapalette
+        {
+        font-size: 30px;
+        color: $colortextrestaurant4start  
+        }
+     
+    }
 }
+
+/* zoom*/
+.zoom
+{
+   
+   display: inline-block;
+   @include size-bloc;
+   @include zoom;
+ 
+}
+
+ 
 /* Responsivité*/  
 @media screen and (max-width: 1024px)
 {
@@ -25,25 +111,44 @@
         
     }
     
-    .site-content{
+    .box-menu-container
+    {
         margin-top: 5px;
         margin-bottom: 0px;
         margin-right: 0px;
         margin-left: 0px;
         height: auto;
-        
-        
+            &__lanoteenchantee
+            {
+                margin-top: 5%;
+                margin-bottom: 5%;
+                margin-right: 0px;
+                margin-left: 0px;
+                height: 50%
+            }
+            &__lechicalafrancaise
+            {
+                margin-top: 5%;
+                margin-bottom: 5%;
+                margin-right: 0px;
+                margin-left: 0px;
+                height: 50%
+            }
+            &__ledelicedespapilles
+            {
+                margin-top: 5%;
+                margin-bottom: 5%;
+                margin-right: 0px;
+                margin-left: 0px;
+                height: 50%
+            }
+            &__lapalettedugout
+            {
+                margin-top: 5%;
+                margin-bottom: 5%;
+                margin-right: 0px;
+                margin-left: 0px;
+                height: 50%
+            }
     }
-    .box-menu-container{
-        margin-top: 5%;
-        margin-bottom: 5%;
-        margin-right: 0px;
-        margin-left: 0px;
-        height: 50%;
-    }
-    .box-menu-content
-    {
-       height: 100%;
-    }
-}
-
+}   
