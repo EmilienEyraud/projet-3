@@ -13,21 +13,21 @@
         color: $colortextmenu1;
         .fa-music
         {
-        @include text-menu;
+        @include text-bloc;
         background-image: -webkit-linear-gradient(left, $colormusicstart, $colormusicend);
-        font-size :50px;
-        padding-top: 125px;
+        padding-top: 75px;
         }
         .titre-lanote
         {
-        color:$colortextrestaurant1; 
-        font-size:25px; 
+        @include text-bloc; 
+        background-image: -webkit-linear-gradient(left, $colortextrestaurant1, $colortextrestaurant1);
+        font-size:30px; 
         
         }
         .menu-lanote
         {
         color:$colortextrestaurant1;
-        font-size: 25px;
+        font-size: 30px;
         
         }
     }
@@ -40,9 +40,9 @@
         color: $colortextmenu3;
         .titre-lechic
         {
-        padding-top: 100px;
-        font-size:50px;
-        @include text-menu;
+        padding-top: 75px;
+        font-size:30px;
+        @include text-bloc;
         background-image: -webkit-linear-gradient(left, $colortextrestaurant2start, $colortextrestaurant2middle, $colortextrestaurant2end);
         }
         .menu-lechic
@@ -60,7 +60,8 @@
         .titre-ledelice
         {
         padding-top: 75px;
-        @include text-menu;
+        @include text-bloc;
+        font-size:30px;
         background-image: -webkit-linear-gradient(left,$colortextrestaurant3start, $colortextrestaurant3end);
         }
         .menu-ledelice
@@ -77,14 +78,15 @@
         font-family: $font-family-menu4;
         .titre-lapalette
         {
+        font-size:30px;    
         padding-top:75px;
-        @include text-menu;
+        @include text-bloc;
         background-image: -webkit-linear-gradient(left,$colortextrestaurant4start, $colortextrestaurant4end);
         }
         .menu-lapalette
         {
         font-size: 30px;
-        color: $colortextrestaurant4start  
+        color: $colortextrestaurant4start;
         }
      
     }
@@ -106,10 +108,11 @@
 {
     body
     {
-        width: 125%;
+        width: 100%;
         margin: 0px;
         
     }
+    
     
     .box-menu-container
     {
@@ -150,5 +153,9 @@
                 margin-left: 0px;
                 height: 50%
             }
+    }
+    .prochainement
+    {
+    margin-bottom:125px;
     }
 }   

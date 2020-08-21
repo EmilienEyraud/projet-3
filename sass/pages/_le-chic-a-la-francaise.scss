@@ -13,12 +13,22 @@ img
         background-color: nth($background-menu, 2);
         font-family: $font-family-menu2;
         color: $colortextmenu3;
+        font-size:12px;
         padding: 35px;
-        @media screen and (max-width: 1024px)
+        @media screen and (max-width: 600px)
             
             {
-                 
-               padding: 0px; 
+                padding: 5px;
+                font-size:10px;
+             
+                
+            }
+        @media screen and (min-width: 600px) and (max-width: 1024px)
+            {
+                font-size:20px;
+                padding: 10px;
+                padding-bottom: 80px;
+                
             }
         }
 }
@@ -34,6 +44,14 @@ img
         font-size: 20px;
         text-align: center;
         background-image: -webkit-linear-gradient(left, $colortextrestaurant2start, $colortextrestaurant2middle, $colortextrestaurant2end);
+        @media screen and (max-width:600px)
+        {
+           font-size:20px; 
+        }
+        @media screen and (min-width:600px) and (max-width:1024px)
+        {
+           font-size:30px; 
+        }
      }
 }
 
@@ -64,37 +82,39 @@ img
      &__lechicalafrancaisegauche 
      {
          padding-left: 20px;
+         @media screen and (max-width:1024px)
+         {
+           padding-left: 0px;  
+         }
      }
      &__lechicalafrancaisedroit 
      {
          padding-right: 20px;
          font-weight: bold;
          text-align: right;
+         @media screen and (max-width:1024px)
+         {
+           padding-right: 0px;  
+         }
      }
 }
  /*specificites restaurant 2 le chic à la française*/ 
  .starterlechicalafrancaise
  {
      color: $colortextrestaurant2start;
-     font-size: 12px;
+     
  }
  .middlelechicalafrancaise
  {
      color: $colortextrestaurant2middle;
-     font-size: 12px;
+     
  }
  .endlechicalafrancaise
  {
      color: $colortextrestaurant2end;
-     font-size: 12px;
-     margin-bottom: 75px;
-     @media screen and (max-width: 1024px)
-         
-        {
-                 
-            margin-bottom: 0px;
-            
-        }
+     
+    
+    
  }
 
  

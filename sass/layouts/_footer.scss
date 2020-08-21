@@ -15,12 +15,20 @@ a{
     padding-right: 10px;
     padding-left: 10px;
     @include make-a-freeze;
-    @media screen and (max-width: 1024px)
-             
+    @media screen and (max-width: 600px)
+            
     {
         width: 50%;
         font-size:12px;
         text-align:center;
+        
+    }
+    @media screen and (min-width: 600px) and (max-width: 1024px)
+             
+    {
+        
+       font-size:25px;
+       text-align:center;
     }
 }
 

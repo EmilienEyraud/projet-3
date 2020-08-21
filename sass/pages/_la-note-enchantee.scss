@@ -8,7 +8,20 @@
         font-family: $font-family-menu1;
         color: $colortextmenu1;
         padding: 35px;
+        @media screen and (max-width: 600px)
             
+            {
+                padding: 10px;
+                padding-bottom:30px;
+                font-size:12px;
+                
+            }
+        @media screen and (min-width: 600px ) and (max-width:1024px)
+            
+            {
+                padding-bottom:75px;
+                font-size:30px;
+            }  
         }
 }
            

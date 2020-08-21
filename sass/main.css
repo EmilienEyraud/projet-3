@@ -52,7 +52,7 @@
 }
 /* page accueil*/
 /*header*/
-/* main*/
+/* section*/
 /*prochainement*/
 /*footer*/
 /*pages de menus*/
@@ -208,10 +208,16 @@ a {
   animation: headshake 100ms;
   animation-iteration-count: infinite;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 600px) {
   .footer-bloc {
     width: 50%;
     font-size: 12px;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  .footer-bloc {
+    font-size: 25px;
     text-align: center;
   }
 }
@@ -228,6 +234,7 @@ a {
 @media screen and (max-width: 1024px) {
   .box-menu-container {
     flex-direction: column;
+    margin: 0px;
   }
 }
 .box-menu-container__lanoteenchantee {
@@ -249,20 +256,20 @@ a {
   }
 }
 .box-menu-container__lanoteenchantee .fa-music {
-  font-size: 35px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-image: -webkit-linear-gradient(left, #ee3255, #f69068);
-  font-size: 50px;
-  padding-top: 125px;
+  padding-top: 75px;
 }
 .box-menu-container__lanoteenchantee .titre-lanote {
-  color: #3d1318;
-  font-size: 25px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: -webkit-linear-gradient(left, #3d1318, #3d1318);
+  font-size: 30px;
 }
 .box-menu-container__lanoteenchantee .menu-lanote {
   color: #3d1318;
-  font-size: 25px;
+  font-size: 30px;
 }
 .box-menu-container__lechicalafrancaise {
   width: 300px;
@@ -283,9 +290,8 @@ a {
   }
 }
 .box-menu-container__lechicalafrancaise .titre-lechic {
-  padding-top: 100px;
-  font-size: 50px;
-  font-size: 35px;
+  padding-top: 75px;
+  font-size: 30px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-image: -webkit-linear-gradient(left, #c67413, #a56799, #6e4ccc);
@@ -313,9 +319,9 @@ a {
 }
 .box-menu-container__ledelicedespapilles .titre-ledelice {
   padding-top: 75px;
-  font-size: 35px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-size: 30px;
   background-image: -webkit-linear-gradient(left, #032add, #02ffff);
 }
 .box-menu-container__ledelicedespapilles .menu-ledelice {
@@ -340,8 +346,8 @@ a {
   }
 }
 .box-menu-container__lapalettedugout .titre-lapalette {
+  font-size: 30px;
   padding-top: 75px;
-  font-size: 35px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-image: -webkit-linear-gradient(left, #43973d, #bbf884);
@@ -373,7 +379,7 @@ a {
 /* Responsivité*/
 @media screen and (max-width: 1024px) {
   body {
-    width: 125%;
+    width: 100%;
     margin: 0px;
   }
 
@@ -412,6 +418,10 @@ a {
     margin-left: 0px;
     height: 50%;
   }
+
+  .prochainement {
+    margin-bottom: 125px;
+  }
 }
 /*page*/
 img {
@@ -436,11 +446,20 @@ img {
   background-color: #fff5fe;
   font-family: "sprat";
   color: #02ffff;
+  font-size: 12px;
   padding: 35px;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 600px) {
   .body__lechicalafrancaise {
-    padding: 0px;
+    padding: 5px;
+    font-size: 10px;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  .body__lechicalafrancaise {
+    font-size: 20px;
+    padding: 10px;
+    padding-bottom: 80px;
   }
 }
 
@@ -462,6 +481,16 @@ img {
   font-size: 20px;
   text-align: center;
   background-image: -webkit-linear-gradient(left, #c67413, #a56799, #6e4ccc);
+}
+@media screen and (max-width: 600px) {
+  .blocstartmenu__lechicalafrancaise {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  .blocstartmenu__lechicalafrancaise {
+    font-size: 30px;
+  }
 }
 
 /* soulignement*/
@@ -522,32 +551,33 @@ a.underlinelechicalafrancaiseend:hover {
 .detail__lechicalafrancaisegauche {
   padding-left: 20px;
 }
+@media screen and (max-width: 1024px) {
+  .detail__lechicalafrancaisegauche {
+    padding-left: 0px;
+  }
+}
 .detail__lechicalafrancaisedroit {
   padding-right: 20px;
   font-weight: bold;
   text-align: right;
 }
+@media screen and (max-width: 1024px) {
+  .detail__lechicalafrancaisedroit {
+    padding-right: 0px;
+  }
+}
 
 /*specificites restaurant 2 le chic à la française*/
 .starterlechicalafrancaise {
   color: #c67413;
-  font-size: 12px;
 }
 
 .middlelechicalafrancaise {
   color: #a56799;
-  font-size: 12px;
 }
 
 .endlechicalafrancaise {
   color: #6e4ccc;
-  font-size: 12px;
-  margin-bottom: 75px;
-}
-@media screen and (max-width: 1024px) {
-  .endlechicalafrancaise {
-    margin-bottom: 0px;
-  }
 }
 
 /* page*/
@@ -567,13 +597,21 @@ a.underlinelechicalafrancaiseend:hover {
   background-color: #fdfffd;
   font-family: "roboto";
   padding: 35px;
+  font-size: 12px;
+  padding-bottom: 50px;
 }
-
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 600px) {
   .body__lapalettedugout {
-    padding-top: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding: 5px;
+    padding-bottom: 25px;
+    font-size: 10px;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  .body__lapalettedugout {
+    padding: 10px;
+    padding-bottom: 200px;
+    font-size: 20px;
   }
 }
 
@@ -592,10 +630,19 @@ a.underlinelechicalafrancaiseend:hover {
   font-size: 35px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  width: 400px;
   text-align: center;
   font-size: 25px;
   background-image: -webkit-linear-gradient(left, #43973d, #bbf884);
+}
+@media screen and (max-width: 600px) {
+  .blocstartmenu__lapalettedugout {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  .blocstartmenu__lapalettedugout {
+    font-size: 30px;
+  }
 }
 
 /* soulignement*/
@@ -623,28 +670,19 @@ a.underlinelapalettedugout:hover {
 .detail__lapalettedugoutgauche {
   padding-left: 20px;
 }
+@media screen and (max-width: 1024px) {
+  .detail__lapalettedugoutgauche {
+    padding-left: 0px;
+  }
+}
 .detail__lapalettedugoutdroit {
   padding-right: 20px;
   font-weight: bold;
   text-align: right;
 }
-
-/*specificites restaurant 4 la palette du gout*/
-.starterlapalettedugout {
-  font-size: 12px;
-}
-
-.middlelapalettedugout {
-  font-size: 12px;
-}
-
-.endlapalettedugout {
-  margin-bottom: 75px;
-  font-size: 12px;
-}
 @media screen and (max-width: 1024px) {
-  .endlapalettedugout {
-    margin-bottom: 0px;
+  .detail__lapalettedugoutdroit {
+    padding-right: 0px;
   }
 }
 
@@ -667,9 +705,18 @@ a.underlinelapalettedugout:hover {
   color: #3d1318;
   padding: 35px;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 600px) {
   .body__ledelicedespapilles {
-    padding: 0px;
+    padding: 5px;
+    font-size: 12px;
+    padding-bottom: 20px;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  .body__ledelicedespapilles {
+    padding: 10px;
+    padding-bottom: 100px;
+    font-size: 30px;
   }
 }
 
@@ -687,6 +734,11 @@ a.underlinelapalettedugout:hover {
   font-family: "alexbrush";
   color: #032add;
   font-size: 25px;
+}
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  .blocstartmenu__ledelicedespapilles {
+    font-size: 50px;
+  }
 }
 
 /* soulignement*/
@@ -749,6 +801,19 @@ a.underlineledelicedespapilles:hover {
   font-family: "allura";
   color: #3d1318;
   padding: 35px;
+}
+@media screen and (max-width: 600px) {
+  .body__lanoteenchantee {
+    padding: 10px;
+    padding-bottom: 30px;
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  .body__lanoteenchantee {
+    padding-bottom: 75px;
+    font-size: 30px;
+  }
 }
 
 /* en-tête nom du restaurant*/

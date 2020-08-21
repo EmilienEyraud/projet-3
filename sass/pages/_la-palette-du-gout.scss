@@ -7,22 +7,27 @@
             background-color: nth($background-menu, 4);
             font-family: $font-family-menu4;
             padding: 35px;
+            font-size:12px;
+            padding-bottom:50px;
+            @media screen and (max-width: 600px)
             
+            {
+                padding: 5px;
+                padding-bottom:25px;
+                font-size:10px;
+                           
+            }
+             @media screen and (min-width: 600px ) and (max-width:1024px)
+            
+            {
+                padding: 10px;
+                padding-bottom:200px;
+                font-size:20px;
+            }     
         }
      
 }
-.body__lapalettedugout
-{
-    @media screen and (max-width: 1024px)
-         
-    {
-        
-        padding-top: 0px;
-        padding-left: 0px;
-        padding-right: 0px;
-        
-    }
-}
+
 /* en-tête nom du restaurant*/
  .blocstartmenu
  {
@@ -32,10 +37,17 @@
      {
         font-family: $font-family-menu4;
         @include text-menu;
-        width: 400px;
         text-align: center;
         font-size: 25px;
         background-image: -webkit-linear-gradient(left,$colortextrestaurant4start, $colortextrestaurant4end);
+        @media screen and (max-width:600px)
+        {
+           font-size:20px; 
+        }
+        @media screen and (min-width:600px) and (max-width:1024px)
+        {
+           font-size:30px; 
+        }
      }
  }
  
@@ -52,34 +64,22 @@ a.underlinelapalettedugout
      &__lapalettedugoutgauche 
      {
          padding-left: 20px;
+         @media screen and (max-width:1024px)
+          {
+             padding-left: 0px;
+         }
      }
      &__lapalettedugoutdroit
      {
          padding-right: 20px;
          font-weight: bold;
          text-align: right;
+         @media screen and (max-width:1024px)
+          {
+             padding-right: 0px;
+         }
      }
-} 
- /*specificites restaurant 4 la palette du gout*/
- .starterlapalettedugout
- {
-     font-size: 12px;
- }
-.middlelapalettedugout
-{
-    font-size: 12px;
 }
- .endlapalettedugout
- {
-    margin-bottom: 75px;
-    font-size: 12px;
-    @media screen and (max-width: 1024px)
-         
-    {
-        
-        margin-bottom: 0px;
-       
-        
-    }
- }
+ 
+ 
 
