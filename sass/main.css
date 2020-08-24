@@ -240,6 +240,7 @@ a {
 .box-menu-container__lanoteenchantee {
   width: 300px;
   height: 400px;
+  overflow: hidden;
   text-align: center;
   margin-left: 5%;
   margin-right: 5%;
@@ -274,6 +275,7 @@ a {
 .box-menu-container__lechicalafrancaise {
   width: 300px;
   height: 400px;
+  overflow: hidden;
   text-align: center;
   margin-left: 5%;
   margin-right: 5%;
@@ -303,6 +305,7 @@ a {
 .box-menu-container__ledelicedespapilles {
   width: 300px;
   height: 400px;
+  overflow: hidden;
   text-align: center;
   margin-left: 5%;
   margin-right: 5%;
@@ -331,6 +334,7 @@ a {
 .box-menu-container__lapalettedugout {
   width: 300px;
   height: 400px;
+  overflow: hidden;
   text-align: center;
   margin-left: 5%;
   margin-right: 5%;
@@ -359,11 +363,12 @@ a {
 
 /* zoom*/
 .zoom {
+  overflow: hidden;
   display: inline-block;
   width: 300px;
   height: 400px;
-  text-align: center;
   overflow: hidden;
+  text-align: center;
   transition: transform 0.4s ease-in-out 0s;
 }
 @media screen and (max-width: 1024px) {
@@ -373,6 +378,7 @@ a {
 }
 .zoom:hover {
   transform: scale(1.1);
+  -moz-transform: scale(1.1);
   opacity: 0.5;
 }
 

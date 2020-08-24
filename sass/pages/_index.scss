@@ -96,6 +96,7 @@
 .zoom
 {
    
+   overflow: hidden;
    display: inline-block;
    @include size-bloc;
    @include zoom;
